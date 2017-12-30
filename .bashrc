@@ -1,3 +1,8 @@
+#-------------------------------------------------->
+#
+# ElementaryOS' default .bashrc:
+#
+####################################################
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -169,7 +174,12 @@ xterm*|rxvt*)
 *)
     ;;
 esac
+####################################################
+#
+# End Elementary OS' .bashrc defaults
+#
+# <-------------------------------------------------
 
-# Alec's added stuff -->
+# Alec's added stuff ------------------------------>
 alias xclip="xclip -sel clip"
-# <---------------------
+# <-------------------------------------------------
