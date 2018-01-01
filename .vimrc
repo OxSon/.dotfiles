@@ -107,11 +107,24 @@ nnoremap <tab> %
 vnoremap <tab> %
 
 " following lines remap B and E to move to 
-" beginning and end of line respectively
-" and unbind the previous bindings
+" beginning and end of line respectively,
+" make verbs function correctly w/ 
+" the new bindings and unbind
+" the previous bindings
 nnoremap B ^
 nnoremap E $
 nnoremap $ <nop>
 nnoremap ^ <nop>
-
+nnoremap dE d$
+nnoremap yE y$
+nnoremap dB d^
+nnoremap yB y^
+nnoremap cE c$
+nnoremap cB c^
+" following lines make moving
+" between splits simpler
+nnoremap <leader>j <C-w>j
+nnoremap <leader>h <C-w>h
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
 """""""""""""""""""""""""""""""""""""""""""""""""""""
