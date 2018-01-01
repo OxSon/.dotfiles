@@ -26,6 +26,12 @@ if has('mouse') " enable mouse if terminal supports it
   set mouse=a   " 
 endif		"
 
+set wildmenu " autocomplete vim commands
+
+" following saves a session incl. multiple windows
+" to be reopened with vim -S
+nnoremap <leader>s :mksession<CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Colors and Visual Settings
@@ -46,11 +52,17 @@ set cursorline " highlight current line
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
-" Tab settings
+" Tab settings and indentation
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set expandtab tabstop=4 shiftwidth=4 softtabstop=4 " expand tabs to 4 spaces
+
+if has("autocmd")
+    filetype plugin indent on
+else
+    set autoindent
+endif
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -62,8 +74,8 @@ inoremap jj <ESC>
 " following lines fix accidental 
 " entering of 'help' mode
 inoremap <F1> <ESC>
-nnoremap <F!> <ESC>
-vnoremap <F!> <ESC>
+nnoremap <F1> <ESC>
+vnoremap <F1> <ESC>
 " following opens vertical split
 " and switches to it
 nnoremap <leader>w <C-w>v<C-w>l
@@ -77,18 +89,29 @@ set ignorecase smartcase " ignore case if search pattern
                          " is all lowercase; case sensitive
                          " if any upper case letters are present
 
-set hlsearch showmatch incsearch " highlight searches and
-                                 " and move cursor to match
+set hlsearch showmatch incsearch " highlight searches as characters
+                                 " are typed and move cursor to match
 
 set gdefault " default to global substitution rather than first occurence
 
 " \<space> removes search highlighting
-nnoremap <leader><space> :noh<cr>
+nnoremap <leader><space> :nohlsearch<cr>
 
 " following lines make j and k move on visual lines
 nnoremap j gj
-"
 nnoremap k gk
-""""""""""""""
+
+" following lines make <tab> move between
+" matching bracket pairs outside of insert mode
+nnoremap <tab> %
+vnoremap <tab> %
+
+" following lines remap B and E to move to 
+" beginning and end of line respectively
+" and unbind the previous bindings
+nnoremap B ^
+nnoremap E $
+nnoremap $ <nop>
+nnoremap ^ <nop>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
