@@ -1,4 +1,4 @@
-!1285;s
+!1237;s
 J
 SAU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
 SCU0PATH+=%<JGRASP_PATHS>%;\012PATH=+%;%<JGRASP_C_PATHS>\012CYGWIN=nodosfilewarning\012GCC_COLORS=\012-Run\012ADD_EXE_PATH==Y\012
@@ -12,12 +12,7 @@ s#i0
 s#k0
 s#j0
 s#l0
-s#m0src
-s#n0classes
-s#p0doc
-s#q0test
-s#w0canvas
-!20;g
-%\011src%sMain.java
-!20;f
-%\011src%sMain.java
+!25;g
+%\011DemoArithmetic.java
+!25;f
+%\011DemoArithmetic.java
