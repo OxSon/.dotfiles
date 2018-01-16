@@ -188,6 +188,9 @@ esac
 
 alias xclip="xclip -sel clip"
 
+export EDITOR='vim'
+export VISUAL='vim'
+
 # <-------------------------------------------------
 #
 # End my additions

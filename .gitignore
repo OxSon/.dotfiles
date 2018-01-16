@@ -38,3 +38,11 @@ Pictures/
 Workspace/
 wvpn
 wvpn~
+.grasp_settings/
+.java/
+.node-gyp/
+.vim/bundle/
+eos-setup
+node_modules/
+package-lock.json
+
