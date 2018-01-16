@@ -188,8 +188,8 @@ esac
 
 alias xclip="xclip -sel clip"
 
-export EDITOR='vim'
-export VISUAL='vim'
+export EDITOR="/usr/bin/vim.nox"
+export VISUAL="$VISUAL"
 
 # <-------------------------------------------------
 #
