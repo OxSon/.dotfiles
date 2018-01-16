@@ -191,6 +191,7 @@ alias xclip="xclip -sel clip"
 export EDITOR="/usr/bin/vim.nox"
 export VISUAL="$VISUAL"
 
+alias jgrasp="~/Shcripts/.jgrasp"
 # <-------------------------------------------------
 #
 # End my additions

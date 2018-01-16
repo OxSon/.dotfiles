@@ -28,9 +28,9 @@ set number relativenumber " show relative line numbers in normal mode, except cu
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
-if has('mouse') " enable mouse if terminal supports it
-  set mouse=a   " 
-endif		"
+ "if has('mouse') " enable mouse if terminal supports it
+  "set mouse=a   " 
+ "endif		"
 
 set wildmenu " autocomplete vim commands
 
@@ -56,6 +56,8 @@ endif				               "
 :augroup END
 
 set cursorline " highlight current line
+
+set colorcolumn=80
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
