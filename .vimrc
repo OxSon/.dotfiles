@@ -6,6 +6,10 @@
 
 set nocompatible " enable vim features not compatible with vi
 
+" following allows pathogen to manage
+" 'runtimepath' for easy plug-in use
+execute pathogen#infect()
+
 set lazyredraw " tell vim not to setredraw the screen during macros
 
 set modelines=0 " prevent sec exploits having to do w/ modelines
@@ -13,6 +17,8 @@ set modelines=0 " prevent sec exploits having to do w/ modelines
 set ruler " always show current pos
 
 set showcmd " show cmds in bottom-right
+
+set number relativenumber " show relative line numbers in normal mode, except current line
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -39,9 +45,10 @@ nnoremap <leader>s :mksession<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 if &t_Co > 2 || has("gui_running") " turn on syntax highlighting
   syntax on			               " 
+  set background=dark
+  colorscheme solarized
 endif				               " 
 
-set number relativenumber " show relative line numbers in normal mode, except current line
 :augroup numbertoggle     " and show absolute numbers in insert mode
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -76,10 +83,16 @@ inoremap jj <ESC>
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
 vnoremap <F1> <ESC>
+
 " following opens vertical split
 " and switches to it
 nnoremap <leader>w <C-w>v<C-w>l
 
+" following opens my .vimrc in a vertical split
+nnoremap <leader>ev :vs $MYVIMRC<cr>
+
+" following sources .vimrc
+nnoremap <leader>sv :source $MYVIMRC<cr>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Searching & Moving
