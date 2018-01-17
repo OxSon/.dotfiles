@@ -8,9 +8,9 @@
 .bash_logout
 .bashrc~
 .cache/
-.config/
 .dbus/
 .dmrc
+.config/
 .gitconfig
 .gitignore.swp
 .gnome/

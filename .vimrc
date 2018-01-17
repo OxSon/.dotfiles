@@ -43,11 +43,9 @@ nnoremap <leader>s :mksession<CR>
 " Colors and Visual Settings
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-if &t_Co > 2 || has("gui_running") " turn on syntax highlighting
-  syntax on			               " 
-  set background=dark
-  colorscheme solarized
-endif				               " 
+syntax on			               " 
+set background=dark
+colorscheme solarized
 
 :augroup numbertoggle     " and show absolute numbers in insert mode
 :  autocmd!
