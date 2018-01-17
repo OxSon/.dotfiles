@@ -47,7 +47,6 @@ syntax on			               "
 set background=dark
 colorscheme solarized
 
-
 "stuff to try to fix colorcolumn
 set textwidth=80
 set colorcolumn=+1
