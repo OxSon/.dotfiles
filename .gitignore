@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .kde/
 ..bashrc.un~
 ..vimrc.un~
@@ -46,3 +47,6 @@ eos-setup
 node_modules/
 package-lock.json
 
+=======
+.DS_Store
+>>>>>>> 1e46f09c97f0cb3dbcee19785e213de68a067f9a
