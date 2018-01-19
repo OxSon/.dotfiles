@@ -60,7 +60,7 @@ highlight ColorColumn term=reverse ctermbg=6 guibg=DarkCyan
 
 set cursorline " highlight current line
 
-set colorcolumn=80
+set colorcolumn=80 " not working?
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
