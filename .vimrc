@@ -47,11 +47,6 @@ syntax on			               "
 set background=dark
 colorscheme solarized
 
-"stuff to try to fix colorcolumn
-set textwidth=80
-set colorcolumn=+1
-highlight ColorColumn term=reverse ctermbg=6 guibg=DarkCyan
-
 :augroup numbertoggle     " and show absolute numbers in insert mode
 :  autocmd!
 :  autocmd BufEnter,FocusGained,InsertLeave * set relativenumber
@@ -123,6 +118,15 @@ nnoremap k gk
 " matching bracket pairs outside of insert mode
 nnoremap <tab> %
 vnoremap <tab> %
+
+" following provides easy movement between 
+" code blocks
+" FORWARD
+nnoremap <leader>] ]}
+vnoremap <leader>] ]}
+" BACK
+nnoremap <leader>[ [{
+vnoremap <leader>[ [{
 
 " following lines remap B and E to move to 
 " beginning and end of line respectively,
