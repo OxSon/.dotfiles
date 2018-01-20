@@ -55,7 +55,7 @@ colorscheme solarized
 
 set cursorline " highlight current line
 
-set colorcolumn=80
+set colorcolumn=80 " not working?
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
