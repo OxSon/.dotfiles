@@ -37,6 +37,7 @@ Documents/
 Downloads/
 Pictures/
 Workspace/
+Temp/
 wvpn
 wvpn~
 .grasp_settings/
@@ -46,6 +47,7 @@ wvpn~
 eos-setup
 node_modules/
 package-lock.json
+.teensy
 
 =======
 .DS_Store
