@@ -1,2 +1,0 @@
-#!/bin/bash
-nohup java -jar /opt/jgrasp/jgrasp.jar </dev/null >/dev/null 2>&1 &

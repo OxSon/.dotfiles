@@ -191,9 +191,11 @@ alias xclip="xclip -sel clip"
 export EDITOR="/usr/bin/vim.nox"
 export VISUAL="$VISUAL"
 
-alias jgrasp="~/Shcripts/.jgrasp"
+alias jgrasp="nohup /opt/jgrasp/bin/jgrasp </dev/null >/dev/null 2>&1 &"
 
 alias wvpn="~/Shcripts/.wvpn"
+
+alias tmux="tmux -2"
 # <-------------------------------------------------
 #
 # End my additions
