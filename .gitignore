@@ -1,13 +1,10 @@
 <<<<<<< HEAD
 .kde/
-..bashrc.un~
-..vimrc.un~
+*~
 .ICEauthority
 .Xauthority
-.aSample.un~
 .bash_history
 .bash_logout
-.bashrc~
 .cache/
 .dbus/
 .dmrc
@@ -28,9 +25,6 @@
 .sudo_as_admin_successful
 .tldr/
 .viminfo
-.vimrc~
-.wvpn.sh.un~
-.wvpn.un~
 .xsession-errors
 .xsession-errors.old
 Documents/
@@ -39,7 +33,6 @@ Pictures/
 Workspace/
 Temp/
 wvpn
-wvpn~
 .grasp_settings/
 .java/
 .node-gyp/
@@ -48,6 +41,7 @@ eos-setup
 node_modules/
 package-lock.json
 .teensy
+.netr*
 
 =======
 .DS_Store
