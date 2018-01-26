@@ -1,0 +1,62 @@
+#!/bin/bash
+#update your system
+sudo apt update && sudo apt upgrade
+# get a .deb package installer
+sudo apt install gdebi
+# make copying from files & command
+# line convenient
+sudo apt install xclip
+# put this in your .bashrc
+# alias xclip="xclip -sel clip"
+# ppa
+sudo apt install software-properties-common
+# elementary tweaks adds a nice icons
+# themes & system settings options
+sudo add-apt-repository ppa:philip.scott/elementary-tweaks
+sudo apt-get update
+sudo apt-get install elementary-tweaks
+# get redshift; your eyes will
+# thank you. Add it to system
+# start up as well.
+# fix samba hogging your CPU
+sudo chmod 744 /usr/lib/gvfs/gvfsd-smb-browse
+#get git & configure
+sudo apt install git
+git config --global user.name "A-L-M"
+git config --global user.email "al3cmills@gmail.com"
+# get an ssh key & such
+ssh-keygen -t rsa -b 4096 -C "al3cmills@gmail.com"
+eval "$(ssh-agent -s)"
+xclip -sel clip < ~/.ssh/id_rsa.pub
+# after this, add key to github via
+# https://github.com/settings/keys
+# dev tools
+sudo apt install vim-nox
+# get vimrc & bash rc
+# git clone git@github.com:A-L-M/dotfiles.git
+sudo apt install default-jdk
+# get npm and nodejs
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - 
+sudo apt-get install -y nodejs
+# clean simplified man pages
+sudo npm install tldr
+tldr --update
+# get a browser that doesn't suck
+# sudo apt install chromium-browser
+# various other software
+sudo apt install libreoffice
+sudo apt install vlc
+#laptop settings below here:
+###########################
+# TLP helps w/ laptop overheating
+# sudo apt install tlp tlp-rdw
+# osX-like gestures
+# sudo apt install xdotool wmctrl
+# sudo apt install libinput-tools
+# git clone http://github.com/bulletmark/libinput-gestures
+# cd libinput-gestures
+# sudo make install
+# swap caps:ctrl and disable
+# natural scrolling
+# in system settings
+# download & unzip jgrasp.zip
