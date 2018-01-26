@@ -10,6 +10,7 @@
 .dmrc
 .config/
 .gitconfig
+.gksu*
 .gitignore.swp
 .gnome/
 .lesshst
@@ -21,6 +22,7 @@
 .oracle_jre_usage/
 .pki/
 .profile
+.Idea*
 .ssh/
 .sudo_as_admin_successful
 .tldr/
