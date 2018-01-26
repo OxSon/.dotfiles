@@ -30,11 +30,17 @@ eval "$(ssh-agent -s)"
 xclip -sel clip < ~/.ssh/id_rsa.pub
 # after this, add key to github via
 # https://github.com/settings/keys
+
 # dev tools
 sudo apt install vim-nox
-# get vimrc & bash rc
-# git clone git@github.com:A-L-M/dotfiles.git
 sudo apt install default-jdk
+sudo add-apt-repository ppa:ubuntu-desktop/ubuntu-make
+sudo apt update
+sudo apt install ubuntu-make
+umake ide idea
+# get vimrc & bash rc and such
+cd
+git clone git@github.com:A-L-M/dotfiles.git
 # get npm and nodejs
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash - 
 sudo apt-get install -y nodejs
@@ -42,17 +48,20 @@ sudo apt-get install -y nodejs
 sudo npm install tldr
 tldr --update
 # get a browser that doesn't suck
-# sudo apt install chromium-browser
+sudo apt install chromium-browser
+# also get chrome for netflix purposes
+wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+sudo apt install google-chrome
 # various other software
 sudo apt install libreoffice
 sudo apt install vlc
 #laptop settings below here:
-###########################
-# TLP helps w/ laptop overheating
+########################### SOMETHING HERE IS BROKEN!!!!!!!!
+# TLP helps w/ laptop overheating // maybe this?
 # sudo apt install tlp tlp-rdw
 # osX-like gestures
-# sudo apt install xdotool wmctrl
-# sudo apt install libinput-tools
+# sudo apt install xdotool wmctrl// maybe this?
+# sudo apt install libinput-tools// maybe this?
 # git clone http://github.com/bulletmark/libinput-gestures
 # cd libinput-gestures
 # sudo make install
