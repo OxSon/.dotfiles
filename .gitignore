@@ -47,6 +47,18 @@ package-lock.json
 .netr*
 .joinnow/
 .rnd
+.X*
+.bash*
+.dir*
+.dmenurc
+.elinks/
+.gimp*
+.gtkrc*
+.icons/
+.moc/
+.moonchild*
+.thumbnails/
+.xinitrc
 
 =======
 .DS_Store
