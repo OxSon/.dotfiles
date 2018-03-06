@@ -2,6 +2,7 @@
 .ssr*
 *.icls
 .kde/
+.esd*
 *~
 .ICEauthority
 .Xauthority

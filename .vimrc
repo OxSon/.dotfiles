@@ -38,6 +38,13 @@ set wildmenu " autocomplete vim commands
 " to be reopened with vim -S
 nnoremap <leader>s :mksession<CR>
 
+"NERDTree settings:
+"open/close NERDTree 
+map <C-n> :NERDTreeToggle<CR>
+
+" close NERDTree if its the only window left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Colors and Visual Settings
@@ -46,6 +53,8 @@ nnoremap <leader>s :mksession<CR>
 syntax on			               " 
 set background=dark
 colorscheme solarized
+
+let g:airline_theme='solarized'
 
 :augroup numbertoggle     " and show absolute numbers in insert mode
 :  autocmd!
