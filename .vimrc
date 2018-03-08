@@ -23,13 +23,13 @@ set number relativenumber " show relative line numbers in normal mode, except cu
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " User Interface
-" 
+"
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
  "if has('mouse') " enable mouse if terminal supports it
-  "set mouse=a   " 
+  "set mouse=a   "
  "endif		"
 
 set wildmenu " autocomplete vim commands
@@ -38,14 +38,23 @@ set wildmenu " autocomplete vim commands
 " to be reopened with vim -S
 nnoremap <leader>s :mksession<CR>
 
+"NERDTree settings:
+"open/close NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" close NERDTree if its the only window left open
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Colors and Visual Settings
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax on			               " 
+syntax on			               "
 set background=dark
 colorscheme solarized
+
+let g:airline_theme='solarized'
 
 :augroup numbertoggle     " and show absolute numbers in insert mode
 :  autocmd!
@@ -78,7 +87,7 @@ endif
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 inoremap jj <ESC>
 
-" following lines fix accidental 
+" following lines fix accidental
 " entering of 'help' mode
 inoremap <F1> <ESC>
 nnoremap <F1> <ESC>
@@ -93,6 +102,10 @@ nnoremap <leader>ev :vs $MYVIMRC<cr>
 
 " following sources .vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>
+
+"Strip trailing whitespace with F5
+nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
+
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Searching & Moving
@@ -119,7 +132,7 @@ nnoremap k gk
 nnoremap <tab> %
 vnoremap <tab> %
 
-" following provides easy movement between 
+" following provides easy movement between
 " code blocks
 " FORWARD
 nnoremap <leader>] ]}
@@ -128,9 +141,9 @@ vnoremap <leader>] ]}
 nnoremap <leader>[ [{
 vnoremap <leader>[ [{
 
-" following lines remap B and E to move to 
+" following lines remap B and E to move to
 " beginning and end of line respectively,
-" make verbs function correctly w/ 
+" make verbs function correctly w/
 " the new bindings and unbind
 " the previous bindings
 nnoremap B ^
