@@ -60,6 +60,7 @@ package-lock.json
 .moonchild*
 .thumbnails/
 .xinitrc
+Videos/
 
 =======
 .DS_Store

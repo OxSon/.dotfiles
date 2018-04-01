@@ -162,6 +162,11 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>h <C-w>h
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
+
+nnoremap <C-j> <C-w>j
+nnoremap <C-h> <C-w>h
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 " quickly edit & reload
 " .vimrc
 nnoremap <leader>ec :vs ~/.vimrc<CR>
