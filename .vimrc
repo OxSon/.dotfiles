@@ -34,17 +34,6 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 
 set wildmenu " autocomplete vim commands
 
-" following saves a session incl. multiple windows
-" to be reopened with vim -S
-nnoremap <leader>s :mksession<CR>
-
-"NERDTree settings:
-"open/close NERDTree
-map <C-n> :NERDTreeToggle<CR>
-
-" close NERDTree if its the only window left open
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
 " Colors and Visual Settings
@@ -53,8 +42,6 @@ autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isT
 syntax on			               "
 set background=dark
 colorscheme solarized
-
-let g:airline_theme='solarized'
 
 :augroup numbertoggle     " and show absolute numbers in insert mode
 :  autocmd!
@@ -85,6 +72,7 @@ endif
 " Miscellaneous Bindings
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
+inoremap JJ jj
 inoremap jj <ESC>
 
 " following lines fix accidental
@@ -102,9 +90,6 @@ nnoremap <leader>ev :vs $MYVIMRC<cr>
 
 " following sources .vimrc
 nnoremap <leader>sv :source $MYVIMRC<cr>
-
-"Strip trailing whitespace with F5
-nnoremap <F5> :let _s=@/<Bar>:%s/\s\+$//e<Bar>:let @/=_s<Bar><CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
