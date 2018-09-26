@@ -15,6 +15,8 @@ alias jgrasp="nohup /opt/jgrasp/bin/jgrasp </dev/null >/dev/null 2>&1 &"
 alias wvpn="~/Shcripts/.wvpn"
 
 alias tmux="tmux -2"
+
+shopt -s autocd
 # <-------------------------------------------------
 #
 # End my additions
