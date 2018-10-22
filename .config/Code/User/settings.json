@@ -1,0 +1,159 @@
+{
+    "workbench.colorTheme": "Better Solarized Dark",
+    "editor.renderWhitespace": "boundary",
+    "editor.cursorStyle": "block",
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true,
+    "editor.jformatOnType": true,
+    "vim.incsearch": true,
+    "vim.hlsearch": true,
+    "vim.ignorecase": true,
+    "vim.smartcase": true,
+    "vim.handleKeys": {
+        "<C-k>": false,
+        "<C-v>": false,
+        "<C-c>": false,
+        "<C-r>": true,
+        "<C-u>": true,
+        "<C-d>": true,
+    },
+    "vim.normalModeKeyBindings": [
+        {
+            "before": [
+                "<leader>",
+                "space"
+            ],
+            "commands": [
+                ":nohl"
+            ]
+        },
+        {
+            "before": [
+                "E"
+            ],
+            "after": [
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "B"
+            ],
+            "after": [
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "E"
+            ],
+            "after": [
+                "d",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "d",
+                "B"
+            ],
+            "after": [
+                "d",
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "y",
+                "E"
+            ],
+            "after": [
+                "y",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "y",
+                "B"
+            ],
+            "after": [
+                "y",
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "E"
+            ],
+            "after": [
+                "c",
+                "$"
+            ]
+        },
+        {
+            "before": [
+                "c",
+                "B"
+            ],
+            "after": [
+                "c",
+                "^"
+            ]
+        },
+        {
+            "before": [
+                "<C-l>"
+            ],
+            "commands": [
+                "workbench.action.focusRightGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-h>"
+            ],
+            "commands": [
+                "workbench.action.focusLeftGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-k>"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ]
+        },
+        {
+            "before": [
+                "<C-j>"
+            ],
+            "commands": [
+                "workbench.action.focusAboveGroup"
+            ],
+        }
+    ],
+    "vim.insertModeKeyBindings": [
+        {
+            "before": [
+                "j",
+                "j"
+            ],
+            "after": [
+                "<ESC>"
+            ]
+        },
+        {
+            "before": [
+                "J",
+                "J"
+            ],
+            "after": [
+                "<ESC>"
+            ]
+        }
+    ],
+}

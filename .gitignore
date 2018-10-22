@@ -4,7 +4,6 @@
 .cabal
 .mono
 .stack
-.vscode/
 Videos/
 .IntelliJIdea2018.1/
 .PyCharm2018.2/
@@ -85,7 +84,6 @@ package-lock.json
 .moonchild*
 .thumbnails/
 .xinitrc
-.config/Code/
 .config/Trolltech.conf
 .config/autostart/
 .config/chromium/
