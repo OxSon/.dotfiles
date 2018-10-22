@@ -1,3 +1,4 @@
+.*.zni
 .ssr*
 .dotnet
 .cabal
@@ -130,4 +131,15 @@ Videos/
 .config/qutebrowser/bookmarks/
 .config/qutebrowser/qsettings/
 .config/qutebrowser/quickmarks
+.config/pavucontrol.ini
+.config/qutebrowser/qutebrowser/
+.histfile
+.ssh-agent-thing
+.zprofile
+Builds/
+ignore
+services
+todolist
 
+.bash_profile
+.config/configstore/
