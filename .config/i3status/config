@@ -7,12 +7,12 @@
 # If the above line is not correctly displayed, fix your editor first!
 
 general {
-        colors = true
-        color_good      = "#93a1a1"
-        color_bad       = "#b58900"
-        #color_separator = "#268bd2"
-        output_format   = "i3bar"
-        interval = 5
+#        colors = true
+#        color_good      = "#93a1a1"
+#        color_bad       = "#b58900"
+#        #color_separator = "#268bd2"
+#        output_format   = "i3bar"
+#        interval = 5
 }
 
 #order += "ipv6"

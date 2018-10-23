@@ -39,9 +39,10 @@ set wildmenu " autocomplete vim commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on			               "
 set background=dark
-colorscheme solarized
+"colorscheme solarized
+colorscheme wal
 
-set cursorline " highlight current line
+"set cursorline " highlight current line
 
 set colorcolumn=80 " vertical highlight @ 80 character width
 

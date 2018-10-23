@@ -70,6 +70,13 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+#Import colorscheme from 'wal' asynchronously
+# & --run the process in the background
+# ( ) --hide shell job control messages
+(cat ~/.cache/wal/sequences &)
+#add support for TTYs
+source ~/.cache/wal/colors-tty.sh
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -102,6 +109,7 @@ alias la="ls -a"
 alias xclilp="xclip -sell clip"
 alias tmux="tmux -2"
 alias ghc="ghc -dynamic"
+alias vtop="wal-vtop &> /dev/null && vtop -t wal"
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
