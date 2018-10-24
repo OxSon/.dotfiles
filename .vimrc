@@ -40,7 +40,8 @@ set wildmenu " autocomplete vim commands
 syntax on			               "
 set background=dark
 "colorscheme solarized
-colorscheme wal
+"colorscheme wal
+colorscheme waltest
 
 "set cursorline " highlight current line
 

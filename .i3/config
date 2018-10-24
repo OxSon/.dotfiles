@@ -182,8 +182,6 @@ bindsym $mod+Ctrl+c exec ~/Scripts/load-colors.sh; set_from_resource $fg i3wm.co
 #
 #   Startup Processes
 #######################
-#map caps to escape
-exec --no-startup-id setxkbmap -option caps:escape
 #make mouse invisible after brief period
 exec --no-startup-id unclutter -noevents
 #make terms prettttttttty
@@ -198,6 +196,9 @@ exec --no-startup-id wal -Rg
 exec --no-startup-id ~/Scripts/intellijPywalGen.sh ~/.IntelliJIdea2018.2/config
 exec --no-startup-id ~/Scripts/intellijPywalGen.sh ~/.Rider2018.2/config
 
+#save the eyes
+exec --no-startup-id redshift
+
 #Set window decoration colors from Xresources (if fail falls back to #f0f0f0
 set_from_resource $fg i3wm.color7
 set_from_resource $bg i3wm.color2
@@ -210,8 +211,9 @@ client.placeholder      $bg $bg $fg $bg $bg
 
 client.background       $bg
 
+#polybar
+exec --no-startup-id polybar bar -q &
 
-#screenshots
 bindsym --release Print exec --no-startup-id scrot '%m-%d_%y_$wk$h.png' -e 'mv $f ~/Pictures/scrots'
 bindsym --release Shift+Print exec --no-startup-id scrot -s
 
@@ -220,6 +222,9 @@ hide_edge_borders both
 for_window [class="^.*"] border pixel 2
 gaps inner 5
 gaps outer 5
+
+#map caps to escape
+exec --no-startup-id setxkbmap -option caps:escape
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)

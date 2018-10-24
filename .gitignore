@@ -89,6 +89,7 @@ package-lock.json
 .config/chromium/
 .config/csharp.history
 .config/dconf/
+.config/discord/
 .config/enchant/
 .config/epiphany/
 .config/evolution/
@@ -162,3 +163,4 @@ todolist
 .zsh_history
 .zshrc.pre-oh-my-zsh
 xclip
+.config/discord

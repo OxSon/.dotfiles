@@ -1,0 +1,3 @@
+[submodule "Scripts/intellijPywal"]
+	path = Scripts/intellijPywal
+	url = https://github.com/Mr-SD/intellijPywal
