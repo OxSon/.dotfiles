@@ -28,7 +28,7 @@ font pango:DejaVu Sans Mono 8
 
 
 #lock screen w/ picture of currently focused window
-bindsym $mod+i exec i3lock-fancy -pg --text='$$$$$$' -- scrot -z
+bindsym $mod+i exec i3lock-fancy -p --text='$$$$$$' -- scrot -z
 
 #lock screen w/ only background image
 bindsym $mod+Shift++i workspace $ws10; exec i3lock-fancy -p --text='$$$$$$' -- scrot -z -d 1
@@ -42,6 +42,12 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+Return exec --no-startup-id qutebrowser
 #start spotify
 bindsym $mod+Shift+s exec --no-startup-id spotify
+
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -175,8 +181,11 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-#reload background and colorscheme
+#change to random background and colorscheme
 bindsym $mod+Ctrl+c exec ~/Scripts/load-colors.sh; set_from_resource $fg i3wm.color7; set_from_resource $bg i3wm.color2; client.focused          $bg $bg $fg $bg $bg; client.focused_inactive $bg $bg $fg $bg $bg; client.unfocused        $bg $bg $fg $bg $bg; client.urgent           $bg $bg $fg $bg $bg; client.placeholder      $bg $bg $fg $bg $bg; client.background       $bg; restart 
+
+#change to background currently pointed to at .config/wall.png
+bindsym $mod+Shift+Ctrl+c exec ~/Scripts/load-colors.sh $HOME/.config/wall.png; set_from_resource $fg i3wm.color7; set_from_resource $bg i3wm.color2; client.focused          $bg $bg $fg $bg $bg; client.focused_inactive $bg $bg $fg $bg $bg; client.unfocused        $bg $bg $fg $bg $bg; client.urgent           $bg $bg $fg $bg $bg; client.placeholder      $bg $bg $fg $bg $bg; client.background       $bg; restart 
 
 #######################
 #
@@ -191,11 +200,7 @@ exec --no-startup-id compton
 exec --no-startup-id pasystray
 
 #set the background and colorscheme
-exec --no-startup-id wal -Rg
-#sync colorscheme for jetbrains products
-exec --no-startup-id ~/Scripts/intellijPywalGen.sh ~/.IntelliJIdea2018.2/config
-exec --no-startup-id ~/Scripts/intellijPywalGen.sh ~/.Rider2018.2/config
-
+exec --no-startup-id ~/Scripts/load-colors.sh
 #save the eyes
 exec --no-startup-id redshift
 
@@ -212,7 +217,7 @@ client.placeholder      $bg $bg $fg $bg $bg
 client.background       $bg
 
 #polybar
-exec --no-startup-id polybar bar -q &
+exec_always killall -q polybar; polybar main -qr &
 
 bindsym --release Print exec --no-startup-id scrot '%m-%d_%y_$wk$h.png' -e 'mv $f ~/Pictures/scrots'
 bindsym --release Shift+Print exec --no-startup-id scrot -s
@@ -224,11 +229,14 @@ gaps inner 5
 gaps outer 5
 
 #map caps to escape
-exec --no-startup-id setxkbmap -option caps:escape
+exec_always --no-startup-id setxkbmap -option caps:escape
+
+#something pretty to greet us
+exec_always pipes.sh
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
 #        font pango:DejaVu Sans Mono 11
 #        status_command i3status
-#}
+exec alacritty -e pipes.sh

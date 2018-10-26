@@ -4,45 +4,21 @@
 #   qute://help/settings.html
 
 # Uncomment this to still load settings configured via autoconfig.yml
+import yaml
+
 config.load_autoconfig()
 
-# Foreground color of unselected even tabs.
-# Type: QtColor
-c.colors.tabs.even.fg = 'gray'
+with (config.configdir / 'colors.yml').open() as f:
+    yaml_data = yaml.load(f)
 
-# Background color of unselected odd tabs.
-# Type: QtColor
-c.colors.tabs.odd.bg = '#083c4a'
+def dict_attrs(obj, path=''):
+    if isinstance(obj, dict):
+        for k, v in obj.items():
+            yield from dict_attrs(v, '{}.{}'.format(path, k) if path else k)
+    else:
+        yield path, obj
 
-# Foreground color of unselected odd tabs.
-# Type: QtColor
-c.colors.tabs.odd.fg = 'gray'
+for k, v in dict_attrs(yaml_data):
+    config.set(k, v)
 
-# List of user stylesheet filenames to use.
-# Type: List of File, or File
-c.content.user_stylesheets = []
-
-# Foreground color of the statusbar.
-# Type: QssColor
-c.colors.statusbar.normal.fg = 'white'
-
-# Background color of unselected even tabs.
-# Type: QtColor
-c.colors.tabs.even.bg = '#002b36'
-
-# Enable JavaScript.
-# Type: Bool
-config.set('content.javascript.enabled', True, 'file://*')
-
-# Enable JavaScript.
-# Type: Bool
-config.set('content.javascript.enabled', True, 'chrome://*/*')
-
-# Enable JavaScript.
-# Type: Bool
-config.set('content.javascript.enabled', True, 'qute://*/*')
-
-# Bindings for normal mode
 config.bind('D', 'close')
-config.bind('\\n', 'config-cycle content.user_stylesheets ~/Themes/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css "" ;; reload')
-config.bind('close', 'D')
