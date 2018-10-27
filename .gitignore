@@ -164,3 +164,10 @@ todolist
 .zshrc.pre-oh-my-zsh
 xclip
 .config/discord
+.intheam/*
+.IntelliJIdea2018.2/
+.Rider2018.2/
+.themes/
+.vsts/
+Scripts/eos-setup
+Scripts/i3spotifystatus/

@@ -1,0 +1,24 @@
+{"description":"Drawer.cs <- finish for 2410","entry":"20181027T015654Z","modified":"20181027T015654Z","status":"pending","uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"Polybar <- expand customiztion","entry":"20181027T015827Z","modified":"20181027T015827Z","status":"pending","uuid":"cbf611ce-f7d8-45f8-991a-9e6515b0d720"}
+{"description":"Polybar <- redshift\/wpm not working?\n\/\n","entry":"20181027T015904Z","modified":"20181027T015904Z","status":"pending","uuid":"70953c87-0d56-447f-a621-33d6282c529f"}
+{"description":"Polybar <- redshift\/wpm not working?","entry":"20181027T015904Z","modified":"20181027T015927Z","status":"pending","uuid":"70953c87-0d56-447f-a621-33d6282c529f"}
+{"description":"Polybar","entry":"20181027T015904Z","modified":"20181027T020010Z","status":"pending","tags":["tag"],"uuid":"70953c87-0d56-447f-a621-33d6282c529f"}
+{"description":"Polybar","entry":"20181027T015904Z","modified":"20181027T020035Z","status":"pending","uuid":"70953c87-0d56-447f-a621-33d6282c529f"}
+{"description":"Polybar","entry":"20181027T015904Z","modified":"20181027T020048Z","status":"pending","tags":["polybar"],"uuid":"70953c87-0d56-447f-a621-33d6282c529f"}
+{"description":"Redshift broken? Use systray instead?\n","entry":"20181027T015904Z","modified":"20181027T020113Z","status":"pending","tags":["polybar"],"uuid":"70953c87-0d56-447f-a621-33d6282c529f"}
+{"description":"Redshift broken? Use systray instead?","entry":"20181027T015904Z","modified":"20181027T020127Z","status":"pending","tags":["polybar"],"uuid":"70953c87-0d56-447f-a621-33d6282c529f"}
+{"description":"Polybar <- expand customiztion","entry":"20181027T015827Z","modified":"20181027T020137Z","status":"pending","tags":["polybar"],"uuid":"cbf611ce-f7d8-45f8-991a-9e6515b0d720"}
+{"description":"Drawer.cs <- finish for 2410","entry":"20181027T015654Z","modified":"20181027T020156Z","status":"pending","tags":["Homework"],"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"Drawer.cs <- finish for 2410","entry":"20181027T015654Z","modified":"20181027T020304Z","project":"tic-tac-toe","status":"pending","tags":["Homework"],"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"urgent","entry":"20181027T015654Z","modified":"20181027T020317Z","project":"tic-tac-toe","status":"pending","tags":["Homework"],"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"Implement Drawer class Draw method","entry":"20181027T015654Z","modified":"20181027T020340Z","project":"tic-tac-toe","status":"pending","tags":["Homework"],"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"Implement Drawer class Draw method","entry":"20181027T015654Z","modified":"20181027T020425Z","project":"tic-tac-toe","status":"pending","tags":["Homework","urgent"],"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"urg","entry":"20181027T015654Z","modified":"20181027T020503Z","project":"tic-tac-toe","status":"pending","tags":["Homework","urgent"],"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"urg","entry":"20181027T015654Z","modified":"20181027T020508Z","project":"tic-tac-toe","status":"pending","tags":["Homework","urgent"],"urgency":9,"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"Implement Drawer class Draw method","due":"20181028T060000Z","entry":"20181027T015654Z","modified":"20181027T020537Z","project":"tic-tac-toe","status":"pending","tags":["Homework","urgent"],"urgency":9,"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"github widget","entry":"20181027T020635Z","modified":"20181027T020635Z","status":"pending","tags":["polybar"],"uuid":"1df97dbc-4abc-4136-a9be-4b8e1a8975d5"}
+{"description":"github widget?","entry":"20181027T020635Z","modified":"20181027T020640Z","status":"pending","tags":["polybar"],"uuid":"1df97dbc-4abc-4136-a9be-4b8e1a8975d5"}
+{"description":"animations?","entry":"20181027T020653Z","modified":"20181027T020653Z","status":"pending","tags":["polybar"],"uuid":"c17182a6-cdb1-42b8-b091-9d1be0287076"}
+{"description":"weather?","entry":"20181027T020705Z","modified":"20181027T020705Z","status":"pending","tags":["polybar"],"uuid":"02704bce-fb79-430f-9f06-7010a6e365ba"}
+{"description":"Implement Drawer class Draw method","due":"20181028T060000Z","entry":"20181027T015654Z","modified":"20181027T020719Z","project":"tic-tac-toe","status":"pending","tags":["Homework"],"urgency":9,"uuid":"744353b9-26eb-43b4-b4cc-a1959278faf6"}
+{"description":"gmail?","entry":"20181027T020731Z","modified":"20181027T020731Z","status":"pending","tags":["polybar"],"uuid":"e517298b-618a-47fb-b4d5-77e740acd89d"}
