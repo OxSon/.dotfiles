@@ -32,10 +32,9 @@ data.location=~/.task
 ###########################
 #      inthe.am syncing
 ###########################
-
-taskd.certificate=$HOME/.intheam/private.certificate.pem
-taskd.key=$HOME/.intheam/private.key.pem
-taskd.ca=$HOME/.intheam/ca.cert.pem
 taskd.server=taskwarrior.inthe.am:53589
 taskd.credentials=inthe_am/al3cmills/8941d1c0-525f-4928-98f8-7a1e85632e33
 taskd.trust=ignore hostname
+taskd.ca=\/home\/alec\/.intheam\/ca.cert.pem
+taskd.certificate=\/home\/alec\/.intheam\/private.certificate.pem
+taskd.key=\/home\/alec\/.intheam\/private.key.pem

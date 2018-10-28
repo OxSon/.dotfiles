@@ -1,4 +1,4 @@
-;==========================================================
+==========================================================
 ;
 ;
 ;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
@@ -26,6 +26,7 @@ secondary = ${xrdb:color2:#222}
 alert = ${xrdb:color3:#222}
 
 [bar/main]
+enable-ipc = true
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
 height = 27
@@ -49,10 +50,11 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = siji:pixelsize=10;1
+font-3 = MaterialIcons:size=15:antialias=false;6
 
-modules-left = i3 filesystem temperature info-redshift-temp updates-arch-combined
-modules-center = player-mpris-tail
-modules-right = info-hackspeed pulseaudio  date 
+modules-left = i3 filesystem temperature  xwindow
+modules-center = updates-arch-combined player-mpris-tail 
+modules-right = tdrop pulseaudio date powermenu 
 
 tray-position = right
 tray-padding = 2
@@ -64,15 +66,15 @@ wm-restack = i3
 
 ;override-redirect = true
 
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
 
 cursor-click = pointer
-cursor-scroll = ns-resize
+;cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = -> %title:0:30:...%
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -157,8 +159,8 @@ label-urgent = %index%
 label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
-; Separator in between workspaces
-; label-separator = |
+Separator in between workspaces
+label-separator = |
 
 
 [module/mpd]
@@ -271,10 +273,10 @@ label = %date% %time%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = ∰ %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted = "∰                       ✖"
 label-muted-foreground = #666
 
 bar-volume-width = 10
@@ -367,48 +369,17 @@ format-warn-underline = ${self.format-underline}
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
+label-warn-foreground = ${colors.primary}
 
-ramp-0 = 
-ramp-1 = 
-ramp-2 = 
+ramp-0 = 😱
+ramp-1 = 😊
+ramp-2 = 😊
 ramp-foreground = ${colors.foreground-alt}
-
-[module/powermenu]
-type = custom/menu
-
-expand-right = true
-
-format-spacing = 1
-
-label-open = ⏻
-label-open-foreground = ${colors.secondary}
-label-close = ⏻ cancel
-label-close-foreground = ${colors.secondary}
-label-separator = |
-label-separator-foreground = ${colors.foreground-alt}
-
-menu-0-0 = reboot
-menu-0-0-exec = menu-open-1
-menu-0-1 = power off
-menu-0-1-exec = menu-open-2
-
-menu-1-0 = cancel
-menu-1-0-exec = menu-open-0
-menu-1-1 = reboot
-menu-1-1-exec = sudo reboot
-
-menu-2-0 = power off
-menu-2-0-exec = sudo poweroff
-menu-2-1 = cancel
-menu-2-1-exec = menu-open-0
 
 [settings]
 screenchange-reload = true
 compositing-background = compton
-;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
+compositing-border = over
 
 [global/wm]
 margin-top = 5
@@ -416,42 +387,43 @@ margin-bottom = 5
 
 ; vim:ft=dosini
 
-;[module/spotify]
-;type = custom/script
-;exec = ~/.config/polybar/poly-spot.sh ♫ %artist% "~" %title%
-;tail = true
-;interval = 5
-
-[module/info-hackspeed]
-type = custom/script
-exec = ~/.config/polybar/info-hackspeed.sh
-tail = true
-
-[module/info-redshift-temp]
-type = custom/script
-exec = ~/.config/polybar/info-redshift-temp.sh
-interval = 5
-
 [module/player-mpris-tail]
 ;type = custom/script
 ;icon-prev = ⏪ 
 ;icon-stop = ◼
-;icon-play = ▶ 
+;icon = ▶ 
 ;icon-pause = ▮▮
 ;icon-next = ⏩
-;exec = python ~/.config/polybar/player-mpris-tail.py -f '⏪{artist} ▮▮ {title}⏩'
+;type = custom/script
+;exec = ~/.config/polybar/player-mpris-tail.py -f '{icon} {artist} - {title}'
 ;tail = true
-;label = %output%
+;label = ♫ %output%
 ;click-left = ~/.config/polybar/player-mpris-tail.py previous
 ;click-right = ~/.config/polybar/player-mpris-tail.py next
 ;click-middle = ~/.config/polybar/player-mpris-tail.py play-pause
 
+[module/player-mpris-tail]
 type = custom/script
-exec = ~/.config/polybar/player-mpris-tail.py -f '{icon} {:artist:t18:{artist}:}{:artist: - :}{:t20:{title}:}  %{A1:~/.config/polybar/player-mpris-tail.py previous -b vlc -b plasma-browser-integration:} ⏮ %{A} %{A1:~/.config/polybar/player-mpris-tail.py play-pause -b vlc -b plasma-browser-integration:} {icon-reversed} %{A} %{A1:~/.config/polybar/player-mpris-tail.py next -b vlc -b plasma-browser-integration:} ⏭ %{A}' -b vlc -b plasma-browser-integration
+exec = $HOME/.config/polybar/player-mpris-tail.py -f '{icon} {:artist:t18:{artist}:}{:artist: - :}{:t20:{title}:}  %{A1:~/.config/polybar/player-mpris-tail.py previous:}<~%{A} %{A1:~/.config/polybar/player-mpris-tail.py play-pause:} {icon-reversed} %{A} %{A1:~/.config/polybar/player-mpris-tail.py next:}~>%{A}' --icon-none=~ --icon-playing=♫ --icon-paused=▮▮
 tail = true
-label = ♫%output%  
+label = %output%
 
 [module/updates-arch-combined]
 type = custom/script
 exec = ~/.config/polybar/updates-arch-combined.sh
 interval = 600
+
+[module/taskwarrior]
+interval = 5
+type = custom/script
+exec = $HOME/.config/polybar/task_polybar.sh
+format = <label>
+format-prefix = " "
+click-left = task "$((`cat /tmp/tw_polybar_id`))" done
+
+[module/tdrop]
+type = custom/ipc
+hook-0 = tdrop -a -w 30% -x 70% -y 3% alacritty
+hook-1 = echo ""
+click-left = polybar-msg hook tdrop 1
+initial = 2

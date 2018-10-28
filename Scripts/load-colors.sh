@@ -6,12 +6,12 @@ if [ $# -ge 1 ]; then
     cp -f $1 ~/.config/wall.png
     #generate color scheme using file specified
     wal -c
-    wal -tg --saturate 1.0 -i ~/.config/wall.png --backend schemer2
+    wal -tg -i ~/.config/wall.png --backend schemer2
 
 else
     #generate color scheme using a random file
     wal -c
-    wal -tg --saturate 1.0 -i "$(find $HOME/Pictures/Bgs -iname '*.*' | sort -R | tail -n1)" --backend schemer2
+    wal -tg -i "$(find $HOME/Pictures/Bgs -iname '*.*' | sort -R | tail -n1)" --backend schemer2
 fi
 
 #config qutebrowser
