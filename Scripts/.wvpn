@@ -1,0 +1,18 @@
+#!/bin/bash
+## Connects/disconnects from Windscribe VPN and disables/enables IPV6 as appropriate
+
+## Arguments reference:
+## connect: connects and disables IPV6
+## disconnect: disconnects and re-enables IPV6
+
+if [ "$1" == "connect" ]
+then
+	sudo sh -c 'echo 1 > /proc/sys/net/ipv6/conf/all/disable_ipv6'
+	windscribe connect
+elif [ "$1" == "disconnect" ]
+then
+	sudo sh -c 'echo 0 > /proc/sys/net/ipv6/conf/all/disable_ipv6'
+	windscribe disconnect
+else
+	echo 'Please enter connect/disconnect as argument'
+fi

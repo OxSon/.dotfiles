@@ -39,9 +39,9 @@ set wildmenu " autocomplete vim commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on			               "
 set background=dark
-"colorscheme solarized
+colorscheme solarized
 "colorscheme wal
-colorscheme waltest
+"colorscheme waltest
 
 "set cursorline " highlight current line
 

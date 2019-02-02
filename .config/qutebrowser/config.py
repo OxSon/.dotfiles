@@ -30,18 +30,6 @@ c.colors.statusbar.normal.fg = 'white'
 # Type: QtColor
 c.colors.tabs.even.bg = '#002b36'
 
-# Enable JavaScript.
-# Type: Bool
-config.set('content.javascript.enabled', True, 'file://*')
-
-# Enable JavaScript.
-# Type: Bool
-config.set('content.javascript.enabled', True, 'chrome://*/*')
-
-# Enable JavaScript.
-# Type: Bool
-config.set('content.javascript.enabled', True, 'qute://*/*')
-
 # Bindings for normal mode
 config.bind('D', 'close')
 config.bind('\\n', 'config-cycle content.user_stylesheets ~/Themes/solarized-everything-css/css/solarized-dark/solarized-dark-all-sites.css "" ;; reload')

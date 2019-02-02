@@ -47,7 +47,7 @@ esac
 # uncomment for a colored prompt, if the terminal has the capability; turned
 # off by default to not distract the user: the focus in a terminal window
 # should be on the output of commands, not on the prompt
-#force_color_prompt=yes
+force_color_prompt=yes
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
@@ -187,13 +187,18 @@ alias wvpn="~/Shcripts/.wvpn"
 
 alias tmux="tmux -2"
 
-alias pipes="/opt/pipes.sh-master/pipes.sh"
+alias pipes="pipes.sh"
 
 #we don't use old versions around here bub *cries in java 8*
 alias python="python3.7"
 
 #qutebrowser
 alias qt="nohup ~/Apps/qutebrowser/.venv/bin/python3 -m qutebrowser >/dev/null 2>&1 &"
+
+#use trash instead of rm
+alias rm="trash"
+#except when we dont want to
+alias rmf="rm"
 
 # <-------------------------------------------------
 #
