@@ -202,7 +202,7 @@ exec --no-startup-id pasystray
 #set the background and colorscheme
 exec --no-startup-id ~/Scripts/load-colors.sh
 #save the eyes
-exec --no-startup-id redshift -t 6500K:3500K -l 40.70:-111.85 &
+exec --no-startup-id redshift
 
 #Set window decoration colors from Xresources (if fail falls back to #f0f0f0
 set_from_resource $fg i3wm.color7
@@ -217,31 +217,26 @@ client.placeholder      $bg $bg $fg $bg $bg
 client.background       $bg
 
 #polybar
-exec_always .config/polybar/startup.sh
+exec_always killall -q polybar; polybar main -qr &
+
 bindsym --release Print exec --no-startup-id scrot '%m-%d_%y_$wk$h.png' -e 'mv $f ~/Pictures/scrots'
 bindsym --release Shift+Print exec --no-startup-id scrot -s
-bindsym --release $mod+Shift+Print exec --no-startup-id scrot '%m-%d_%y_$wk$h.png' -e 'mv $f ~/Pictures/scrots' -d 5
 
 #needed for i3-gaps
 hide_edge_borders both
 for_window [class="^.*"] border pixel 2
 gaps inner 5
 gaps outer 5
-for_window [class="float"] floating toggle
 
 #map caps to escape
 exec_always --no-startup-id setxkbmap -option caps:escape
 
 #something pretty to greet us
-exec alacritty -e pipes.sh
-
-#sync taskwarrior automatically 
-exec_always --no-startup-id task sync
+exec_always pipes.sh
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 #bar {
 #        font pango:DejaVu Sans Mono 11
 #        status_command i3status
-
-bindsym $mod+t exec --no-startup-id polybar-msg hook tdrop 1
+exec alacritty -e pipes.sh
