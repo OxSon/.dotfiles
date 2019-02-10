@@ -4,11 +4,11 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible " enable vim features not compatible with vi
+" set nocompatible " enable vim features not compatible with vi
 
 " following allows pathogen to manage
 " 'runtimepath' for easy plug-in use
-execute pathogen#infect()
+" execute pathogen#infect()
 
 set lazyredraw " tell vim not to setredraw the screen during macros
 

@@ -200,6 +200,12 @@ alias rm="trash"
 #except when we dont want to
 alias rmf="rm"
 
+#set $JAVA_HOME and switch between jdk versions seamlessly from command line
+
+alias sd="sudo " #this seems fucky, fix?
+alias usejava8="update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64 && export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64/jre'"
+alias usejava11="update-java-alternatives --set /usr/lib/jvm/java-1.11.0-openjdk-amd64 && export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/jre'"
+
 # <-------------------------------------------------
 #
 # End my additions

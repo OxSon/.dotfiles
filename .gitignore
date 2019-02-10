@@ -38,9 +38,7 @@ Apps/
 .cache/
 .dbus/
 .dmrc
-.gitconfig
 .gksu*
-.gitignore.swp
 .gnome/
 .lesshst
 .local/
