@@ -206,6 +206,14 @@ alias sd="sudo " #this seems fucky, fix?
 alias usejava8="update-java-alternatives --set /usr/lib/jvm/java-1.8.0-openjdk-amd64 && export JAVA_HOME='/usr/lib/jvm/java-8-openjdk-amd64/jre'"
 alias usejava11="update-java-alternatives --set /usr/lib/jvm/java-1.11.0-openjdk-amd64 && export JAVA_HOME='/usr/lib/jvm/java-11-openjdk-amd64/jre'"
 
+#git convenience aliases
+alias ga="git add"
+alias gc="git commit"
+alias gp="git push"
+alias gs="git status"
+alias gl="git log"
+alias gd="git diff"
+
 # <-------------------------------------------------
 #
 # End my additions
