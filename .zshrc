@@ -70,12 +70,13 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
+#BROKEN
 #Import colorscheme from 'wal' asynchronously
 # & --run the process in the background
 # ( ) --hide shell job control messages
-(cat ~/.cache/wal/sequences &)
+#(cat ~/.cache/wal/sequences &)
 #add support for TTYs
-source ~/.cache/wal/colors-tty.sh
+#source ~/.cache/wal/colors-tty.sh
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
