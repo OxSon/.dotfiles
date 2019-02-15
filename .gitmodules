@@ -1,3 +1,6 @@
 [submodule "Scripts/intellijPywal"]
 	path = Scripts/intellijPywal
 	url = https://github.com/Mr-SD/intellijPywal
+[submodule "Scripts/pywal"]
+	path = Scripts/pywal
+	url = git@github.com:dylanaraps/pywal.git

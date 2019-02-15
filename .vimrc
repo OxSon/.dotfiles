@@ -4,11 +4,11 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
-set nocompatible " enable vim features not compatible with vi
+" set nocompatible " enable vim features not compatible with vi
 
 " following allows pathogen to manage
 " 'runtimepath' for easy plug-in use
-execute pathogen#infect()
+" execute pathogen#infect()
 
 set lazyredraw " tell vim not to setredraw the screen during macros
 
@@ -26,6 +26,8 @@ set number relativenumber " show relative line numbers in normal mode, except cu
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
+set complete-=i "disable 
+
  "if has('mouse') " enable mouse if terminal supports it
   "set mouse=a   "
  "endif		"
@@ -39,8 +41,9 @@ set wildmenu " autocomplete vim commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on			               "
 set background=dark
-"colorscheme solarized
-colorscheme wal
+colorscheme solarized
+"colorscheme wal
+"colorscheme wal
 "colorscheme waltest
 
 "set cursorline " highlight current line
@@ -121,4 +124,13 @@ nnoremap cB c^
 " .vimrc
 nnoremap <leader>ec :vs $MYVIMRC<CR>
 nnoremap <leader>rc :source $MYVIMRC<CR>
+
+" easier navigation of splits
+nnoremap <leader>j <C-w>j
+nnoremap <leader>h <C-w>h
+nnoremap <leader>k <C-w>k
+nnoremap <leader>l <C-w>l
+
+" open a terminal in a split
+nnoremap <leader>t :vs<CR> :terminal<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""

@@ -156,4 +156,6 @@
             ]
         }
     ],
+    "editor.formatOnType": true,
+    "terminal.external.linuxExec": "io.elementary.terminal",
 }
