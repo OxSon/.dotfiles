@@ -210,10 +210,22 @@ exec --no-startup-id pasystray
 
 #set the background and colorscheme
 #exec --no-startup-id ~/Scripts/load-colors.sh
+
 #save the eyes
 exec --no-startup-id redshift -t 6500K:3500K -l 40.70:-111.85 &
 
-#BROKEN?
+#map caps to escape
+exec_always --no-startup-id setxkbmap -option caps:escape
+
+#sync taskwarrior automatically 
+exec_always --no-startup-id task sync
+
+#get Xresources colors for window decoration on start-up
+exec_always --no-startup-id xrdb $HOME/.Xresources
+
+#set desktop bg
+exec_always --no-startup-id feh --bg-center $HOME/.config/wall.png
+
 #Set window decoration colors from Xresources (if fail falls back to #f0f0f0
 set_from_resource $fg i3wm.color0 #f0f0f0
 set_from_resource $bg i3wm.color1 #f0f0f0
@@ -242,14 +254,6 @@ gaps inner 5
 gaps outer 5
 for_window [class="float"] floating toggle
 
-#map caps to escape
-exec_always --no-startup-id setxkbmap -option caps:escape
-
-#sync taskwarrior automatically 
-exec_always --no-startup-id task sync
-
-#get Xresources colors for window decoration on start-up
-exec_always --no-startup-id xrdb $HOME/.Xresources
 
 #############################
 #   Audio player settings
