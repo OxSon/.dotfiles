@@ -4,8 +4,6 @@
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" set nocompatible " enable vim features not compatible with vi
-
 " following allows pathogen to manage
 " 'runtimepath' for easy plug-in use
 " execute pathogen#infect()
@@ -26,7 +24,7 @@ set number relativenumber " show relative line numbers in normal mode, except cu
 
 set backspace=indent,eol,start " allow backspacing over everything in insert mode
 
-set complete-=i "disable 
+set complete-=i "disable
 
  "if has('mouse') " enable mouse if terminal supports it
   "set mouse=a   "
@@ -43,12 +41,13 @@ syntax on			               "
 set background=dark
 colorscheme solarized
 "colorscheme wal
-"colorscheme wal
 "colorscheme waltest
 
-"set cursorline " highlight current line
+set cursorline " highlight current line
 
-set colorcolumn=80 " vertical highlight @ 80 character width
+set colorcolumn=85 " vertical highlight @ N character width
+
+set listchars=tab:←-→,trail:-,extends:>,precedes:<,nbsp:+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
