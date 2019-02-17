@@ -132,4 +132,6 @@ nnoremap <leader>l <C-w>l
 
 " open a terminal in a split
 nnoremap <leader>t :vs<CR> :terminal<CR>
+" close :terminal mode with ESCC
+tnoremap <ESC> <C-w><C-c>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
