@@ -39,7 +39,11 @@ set wildmenu " autocomplete vim commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on			               "
 set background=dark
-colorscheme solarized
+if has('nvim')
+    colorscheme NeoSolarized
+else
+    colorscheme solarized
+endif
 "colorscheme wal
 "colorscheme waltest
 
@@ -47,7 +51,12 @@ set cursorline " highlight current line
 
 set colorcolumn=85 " vertical highlight @ N character width
 
-set listchars=tab:←-→,trail:-,extends:>,precedes:<,nbsp:+
+if has('nvim')
+else
+    set listchars=tab:←-→,trail:-
+endif
+
+set list
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
