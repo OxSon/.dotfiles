@@ -23,9 +23,9 @@ background-alt = #444
 foreground = ${xrdb:foreground:#839496}
 ;foreground = #002b36
 foreground-alt = #555
-primary = {xrdb:color6:#2aa198}
-secondary = {xrdb:color2:#859900}
-alert = {xrdb:color1:#d33682}
+primary = ${xrdb:color6:#2aa198}
+secondary = ${xrdb:color2:#859900}
+alert = ${xrdb:color1:#d33682}
 
 ;make a bar for second monitor:?
 
@@ -46,7 +46,7 @@ line-size = 3
 line-color = ${colors.primary}
 
 border-size = 4
-border-color = ${colors.secondary}
+border-color = ${colors.background}
 
 padding-left = 0
 padding-right = 2
@@ -125,14 +125,14 @@ wrapping-scroll = false
 ;pin-workspaces = true
 
 label-mode-padding = 2
-label-mode-foreground = #000
+label-mode-foreground = ${colors.foreground}
 label-mode-background = ${colors.primary}
 
 ; focused = Active workspace on focused monitor
-label-focused = %index%
-label-focused-background = ${module/bspwm.label-focused-background}
-label-focused-underline = ${module/bspwm.label-focused-underline}
-label-focused-padding = ${module/bspwm.label-focused-padding}
+label-focused =~ %index%
+label-focused-background = ${colors.background}
+label-focused-underline = ${colors.background}
+label-focused-padding = ${colors.background}
 
 ; unfocused = Inactive workspace on any monitor
 label-unfocused = %index%
@@ -150,7 +150,7 @@ label-urgent-background = ${module/bspwm.label-urgent-background}
 label-urgent-padding = ${module/bspwm.label-urgent-padding}
 
 ; Separator in between workspaces
-label-separator = |
+label-separator = " | "
 
 
 ;[module/mpd]

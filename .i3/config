@@ -244,7 +244,7 @@ for_window [class="float"] floating toggle
 #############################
 #   Audio player settings
 #############################
-FIXME
+#FIXME
 bindcode $mod+118 exec --no-startup-id ~/.config/polybar/player-mpris-tail.py previous
 bindcode $mod+110 exec --no-startup-id ~/.config/polybar/player-mpris-tail.py play-pause
 bindcode $mod+112 exec --no-startup-id ~/.config/polybar/player-mpris-tail.py next
