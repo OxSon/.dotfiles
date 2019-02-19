@@ -91,7 +91,7 @@ export LANG=en_US.UTF-8
 export EDITOR=$(which vim)
 export VISUAL=$(which vim)
 #TERMINAL for i3
-export TERMINAL=$(which alacritty)
+export TERMINAL=$(which kitty)
 
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
