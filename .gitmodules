@@ -13,3 +13,30 @@
 [submodule "vim/plugged/coc.nvim"]
 	path = vim/plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule "vim/plugged/NeoSolarized"]
+	path = vim/plugged/NeoSolarized
+	url = https://github.com/icymind/NeoSolarized
+[submodule "vim/plugged/haskell-vim"]
+	path = vim/plugged/haskell-vim
+	url = https://github.com/neovimhaskell/haskell-vim
+[submodule "vim/plugged/lightline.vim"]
+	path = vim/plugged/lightline.vim
+	url = https://github.com/neovimhaskell/haskell-vim
+[submodule "vim/plugged/neovim-ranger"]
+	path = vim/plugged/neovim-ranger
+	url = https://github.com/airodactyl/neovim-ranger
+[submodule "vim/plugged/vim-autoclose"]
+	path = vim/plugged/vim-autoclose
+	url = https://github.com/Townk/vim-autoclose
+[submodule "vim/plugged/vim-fugitive"]
+	path = vim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive
+[submodule "vim/plugged/vim-gitgutter"]
+	path = vim/plugged/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
+[submodule "vim/plugged/vim-obsession"]
+	path = vim/plugged/vim-obsession
+	url = https://github.com/tpope/vim-obsession
+[submodule "tmux/plugins/tpm"]
+	path = tmux/plugins/tpm
+	url = https://github.com/tmux-plugins/tpm
