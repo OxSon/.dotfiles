@@ -37,7 +37,7 @@ set wildmenu " autocomplete vim commands
 " Colors and Visual Settings
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-syntax on			               "
+syntax on
 set background=dark
 if has('nvim')
     colorscheme NeoSolarized
@@ -53,7 +53,7 @@ set colorcolumn=85 " vertical highlight @ N character width
 
 if has('nvim')
 else
-    set listchars=tab:←-→,trail:-
+    set listchars=tab:>-,trail:-
 endif
 
 set list
