@@ -5,47 +5,45 @@ let &packpath = &runtimepath
 "call plug-ins before vimrc or nvim plugs will not work
 call plug#begin()
     Plug 'iCyMind/NeoSolarized'
-    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
     Plug 'airodactyl/neovim-ranger'
     Plug 'airblade/vim-gitgutter'
     Plug 'itchyny/lightline.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'Townk/vim-autoclose'
-    Plug 'artur-shaik/vim-javacomplete2', { 'for': 'java' }
+    Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+    Plug 'tpope/vim-obsession'
     
 call plug#end()
 
 """"""""""plug-in related settings""""""
 
-"deoplete
-let g:deoplete#enable_at_startup = 1
-call deoplete#custom#option('smart_case', v:true)
 "completion
-inoremap <expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" Use <c-space> for trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
 
-"FIXME something behaving strangely here
-"jcomplete2
-autocmd FileType java setlocal omnifunc=javacomplete#Complete
-"enable smart (trying to guess import option) inserting class imports with F4
-nmap <F4> <Plug>(JavaComplete-Imports-AddSmart)
-imap <F4> <Plug>(JavaComplete-Imports-AddSmart)
+" Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
+" Coc only does snippet and additional edit on confirm.
+inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 
-"enable usual (will ask for import option) inserting class imports with F5, add:
-nmap <F5> <Plug>(JavaComplete-Imports-Add)
-imap <F5> <Plug>(JavaComplete-Imports-Add)
-
-"add all missing imports with F6:
-nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
-imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
-
-"remove all unused imports with F7:
-nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
-imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
+" Remap keys for gotos
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 "lightline
 let g:lightline = {
-    \ 'colorscheme': 'solarized'
+    \ 'colorscheme': 'solarized',
+    \ 'active': {
+          \   'left': [ [ 'mode', 'paste' ],
+          \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+          \ },
+          \ 'component_function': {
+          \   'cocstatus': 'coc#status'
+          \ },
     \ }
 
 "gitgutter

@@ -121,3 +121,10 @@ alias ghc="ghc -dynamic"
 alias vtop="wal-vtop &> /dev/null; vtop -t wal"
 alias pipes="pipes.sh && source $HOME/.zshrc && task"
 alias vim="nvim"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+
+#Vi mode hurrah!#
+set -o vi
+
+alias vi="nvim"
