@@ -2,16 +2,17 @@
     link:
         create: true
         relink: true
+        force: true
 
-- clean: ['~' '~/.config']
+- clean: ['~', '~/.config']
 
 - link:
     ~/.tmux.conf:
+    ~/.ghci:
     ~/.vim:
     ~/.vimrc:
     ~/.bashrc:
     ~/.zshrc:
-    ~/.ghci/:
     ~/.ideavimrc:
     ~/.taskrc:
     ~/.config/:

@@ -1,0 +1,8 @@
+[Default Applications]
+text/html=code-url-handler.desktop
+x-scheme-handler/vscode=code-url-handler.desktop
+text/plain=gvim.desktop
+
+[Added Associations]
+text/plain=io.elementary.code.desktop;jetbrains-rider.desktop;gvim.desktop;
+text/x-java=gvim.desktop;
