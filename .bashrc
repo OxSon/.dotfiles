@@ -83,7 +83,7 @@ fi
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
 # some more ls aliases
-alias ll='ls -alF'
+alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
 
@@ -189,7 +189,6 @@ alias tmux="tmux -2"
 
 alias pipes="pipes.sh"
 
-#we don't use old versions around here bub *cries in java 8*
 alias python="python3.7"
 
 #qutebrowser
@@ -214,6 +213,15 @@ alias gs="git status"
 alias gl="git log"
 alias gd="git diff"
 alias gch="git checkout"
+
+#bash convenience aliases
+alias mv="mv -i" #always prompt when overwriting files
+alias mkdir="mkdir -p" #always create recursively
+
+alias update="sd apt update && sd apt upgrade"
+
+#fasd
+eval "$(fasd --init auto)"
 
 # <-------------------------------------------------
 #
