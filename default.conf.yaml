@@ -8,6 +8,7 @@
 
 - link:
     ~/.tmux.conf:
+    ~/.Xresources:
     ~/.ghci:
     ~/.vim:
     ~/.vimrc:
