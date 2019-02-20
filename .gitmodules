@@ -40,3 +40,6 @@
 [submodule "tmux/plugins/tpm"]
 	path = tmux/plugins/tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "vim/plugged/i3config.vim"]
+	path = vim/plugged/i3config.vim
+	url = https://github.com/mboughaba/i3config.vim

@@ -10,6 +10,7 @@ call plug#begin()
     Plug 'itchyny/lightline.vim'
     Plug 'tpope/vim-fugitive'
     Plug 'Townk/vim-autoclose'
+    Plug 'mboughaba/i3config.vim'
     Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
     Plug 'tpope/vim-obsession'
