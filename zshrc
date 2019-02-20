@@ -126,6 +126,9 @@ alias vtop="wal-vtop &> /dev/null; vtop -t wal"
 alias pipes="pipes.sh && source $HOME/.zshrc && task"
 alias vim="nvim"
 
+#make tldr pretty
+alias tldr="tldr -t base16"
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
 #Vi mode hurrah!#

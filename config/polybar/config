@@ -30,7 +30,7 @@ alert = ${xrdb:color1:#d33682}
 ;make a bar for second monitor:?
 
 [bar/main]
-monitor = ${env:MONITOR:DVI-D-0}
+monitor = ${env:MONITOR:eDP1}
 monitor-strict = false
 width = 100%
 height = 27
@@ -61,7 +61,9 @@ font-3 = MaterialIcons:size=15:antialias=false;6
 
 ;i3
 modules-left = i3 filesystem temperature xwindow
+;modules-center =
 modules-center = updates-arch-combined player-mpris-tail
+;modules-center = updates-arch-combined
 modules-right = pulseaudio date powermenu
 ;tdrop ?
 
@@ -386,11 +388,11 @@ initial = 2
 
 [settings]
 screenchange-reload = true
-;compositing-background = xor
+compositing-background = xor
 ;compositing-background = screen
-;compositing-foreground = source
-;compositing-border = over
-;pseudo-transparency = false
+compositing-foreground = source
+compositing-border = over
+pseudo-transparency = false
 
 [global/wm]
 margin-top = 5

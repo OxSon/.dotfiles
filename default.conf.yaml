@@ -8,6 +8,7 @@
 
 - link:
     ~/.tmux.conf:
+    ~/.tmux:
     ~/.Xresources:
     ~/.ghci:
     ~/.vim:
@@ -16,7 +17,9 @@
     ~/.zshrc:
     ~/.ideavimrc:
     ~/.taskrc:
+    ~/.config/i3/config: i3.config
     ~/.config/:
         glob: true
         path: config/*
-
+- shell:
+    - [git submodule update --init --recursive, Installing submodules]
