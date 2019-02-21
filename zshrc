@@ -88,8 +88,8 @@ source $ZSH/oh-my-zsh.sh
 export LANG=en_US.UTF-8
 
 # Preferred editor for local and remote sessions
-export EDITOR=$(which vim)
-export VISUAL=$(which vim)
+export EDITOR=$(which nvim)
+export VISUAL=$(which nvim)
 #TERMINAL for i3
 export TERMINAL=$(which kitty)
 
@@ -124,7 +124,10 @@ alias tmux="tmux -2"
 alias ghc="ghc -dynamic"
 alias vtop="wal-vtop &> /dev/null; vtop -t wal"
 alias pipes="pipes.sh && source $HOME/.zshrc && task"
+
+#aliases to replace some cli tools
 alias vim="nvim"
+alias cat="bat"
 
 #make tldr pretty
 alias tldr="tldr -t base16"
