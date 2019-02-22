@@ -3,10 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 #
-# DESKTOP
-#  export ZSH="/home/alec/.oh-my-zsh"
-# LAPTOP
-  export ZSH="/home/oxson/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -68,6 +65,7 @@
 plugins=(
     zsh-syntax-highlighting
     git
+    web-search
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -110,14 +108,7 @@ fi
 autoload -U promptinit; promptinit
 prompt pure
 
-# Set personal aliases, overriding those provided by oh-my-zsh libs,
-# plugins, and themes. Aliases can be placed here, though oh-my-zsh
-# users are encouraged to define aliases within the ZSH_CUSTOM folder.
-# For a full list of active aliases, run `alias`.
-#
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+##########Aliases#######
 alias la="ls -a"
 alias xclip="xclip -sel clip"
 alias tmux="tmux -2"
@@ -127,14 +118,15 @@ alias pipes="pipes.sh && source $HOME/.zshrc && task"
 
 #aliases to replace some cli tools
 alias vim="nvim"
+alias vi="nvim"
 alias cat="bat"
+alias ping="prettyping"
 
 #make tldr pretty
 alias tldr="tldr -t base16"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 
-#Vi mode hurrah!#
+#Vi mode for shell#
 set -o vi
 
-alias vi="nvim"
