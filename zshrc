@@ -68,7 +68,6 @@ plugins=(
     web-search
     taskwarrior
     stack
-    git-auto-fetch
     github
     colored-man-pages
     command-not-found
