@@ -66,6 +66,14 @@ plugins=(
     zsh-syntax-highlighting
     git
     web-search
+    taskwarrior
+    stack
+    git-auto-fetch
+    github
+    colored-man-pages
+    command-not-found
+    mvn
+    zsh_reload
 )
 
 source $ZSH/oh-my-zsh.sh
