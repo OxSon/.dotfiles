@@ -61,10 +61,8 @@ font-3 = MaterialIcons:size=15:antialias=false;6
 
 ;i3
 modules-left = i3 filesystem temperature xwindow
-;modules-center =
 modules-center = updates-arch-combined player-mpris-tail
-;modules-center = updates-arch-combined
-modules-right = pulseaudio date powermenu
+modules-right = taskwarrior pulseaudio date
 ;tdrop ?
 
 tray-position = right
