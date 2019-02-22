@@ -1,0 +1,4 @@
+c44423f4-61ff-455e-a347-b1cc131f9209
+{"description":"powermgmt for laptop","entry":"20190221T211730Z","modified":"20190221T211730Z","status":"pending","uuid":"c73bc4f3-6e80-48bd-bdf3-a9ca788f2e2b"}
+{"description":"suspend on lid-close","entry":"20190221T211743Z","modified":"20190221T211743Z","status":"pending","uuid":"247a7e29-9246-4541-acab-37e2b57f01fe"}
+{"description":"powermgmt for laptop","end":"20190221T211754Z","entry":"20190221T211730Z","modified":"20190221T211756Z","status":"deleted","uuid":"c73bc4f3-6e80-48bd-bdf3-a9ca788f2e2b"}
