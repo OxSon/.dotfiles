@@ -21,5 +21,3 @@
     ~/.config/:
         glob: true
         path: config/*
-- shell:
-    - [git submodule update --init --recursive, Installing submodules]
