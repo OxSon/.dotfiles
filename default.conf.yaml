@@ -8,6 +8,9 @@
 
 - link:
     ~/.tmux.conf:
+    ~/.mozilla/firefox/bihhgrws.default/chrome/:
+        glob: true
+        path: chrome/*
     ~/.tmux:
     ~/.Xresources:
     ~/.ghci:

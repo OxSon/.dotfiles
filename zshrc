@@ -138,3 +138,4 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 #Vi mode for shell#
 set -o vi
 
+alias neofetch="neofetch --gpu_brand off --cpu_brand off --kitty --underline_char '~'"
