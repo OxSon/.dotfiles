@@ -43,3 +43,6 @@
 [submodule "vim/plugged/i3config.vim"]
 	path = vim/plugged/i3config.vim
 	url = https://github.com/mboughaba/i3config.vim
+[submodule "task"]
+	path = task
+	url = https://github.com/OxSon/task
