@@ -46,3 +46,15 @@
 [submodule "task"]
 	path = task
 	url = git@github.com:OxSon/task
+[submodule "tmux/plugins/tmux-continuum"]
+	path = tmux/plugins/tmux-continuum
+	url = https://github.com/tmux-plugins/tmux-continuum
+[submodule "tmux/plugins/tmux-resurrect"]
+	path = tmux/plugins/tmux-resurrect
+	url = https://github.com/tmux-plugins/tmux-resurrect
+[submodule "tmux/plugins/tmux-prefix-highlight"]
+	path = tmux/plugins/tmux-prefix-highlight
+	url = https://github.com/tmux-plugins/tmux-prefix-highlight
+[submodule "vim/plugged/rust.vim"]
+	path = vim/plugged/rust.vim
+	url = https://github.com/rust-lang/rust.vim
