@@ -2,3 +2,7 @@ c44423f4-61ff-455e-a347-b1cc131f9209
 {"description":"powermgmt for laptop","entry":"20190221T211730Z","modified":"20190221T211730Z","status":"pending","uuid":"c73bc4f3-6e80-48bd-bdf3-a9ca788f2e2b"}
 {"description":"suspend on lid-close","entry":"20190221T211743Z","modified":"20190221T211743Z","status":"pending","uuid":"247a7e29-9246-4541-acab-37e2b57f01fe"}
 {"description":"powermgmt for laptop","end":"20190221T211754Z","entry":"20190221T211730Z","modified":"20190221T211756Z","status":"deleted","uuid":"c73bc4f3-6e80-48bd-bdf3-a9ca788f2e2b"}
+{"description":"weather?","end":"20190223T041456Z","entry":"20181027T020705Z","modified":"20190223T041456Z","status":"completed","tags":["polybar","arch"],"uuid":"02704bce-fb79-430f-9f06-7010a6e365ba"}
+{"description":"gmail?","end":"20190223T041457Z","entry":"20181027T020731Z","modified":"20190223T041457Z","status":"completed","tags":["polybar","arch"],"uuid":"e517298b-618a-47fb-b4d5-77e740acd89d"}
+{"description":"drop-down dmenu-like but prettier?","end":"20190223T230911Z","entry":"20181028T045621Z","modified":"20190223T230911Z","status":"completed","tags":["arch","polybar"],"uuid":"b2dba1b3-7a55-42e5-b959-06b698f2c22c"}
+{"description":"suspend on lid-close","entry":"20190221T211743Z","modified":"20190224T024855Z","status":"pending","tags":["laptop"],"uuid":"247a7e29-9246-4541-acab-37e2b57f01fe"}

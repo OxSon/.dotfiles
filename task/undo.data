@@ -156,3 +156,19 @@ time 1550783876
 old [description:"powermgmt for laptop" entry:"1550783850" modified:"1550783850" status:"pending" uuid:"c73bc4f3-6e80-48bd-bdf3-a9ca788f2e2b"]
 new [description:"powermgmt for laptop" end:"1550783874" entry:"1550783850" modified:"1550783876" status:"deleted" uuid:"c73bc4f3-6e80-48bd-bdf3-a9ca788f2e2b"]
 ---
+time 1550895296
+old [description:"weather?" entry:"1540606025" modified:"1540607558" status:"pending" tags:"polybar,arch" uuid:"02704bce-fb79-430f-9f06-7010a6e365ba"]
+new [description:"weather?" end:"1550895296" entry:"1540606025" modified:"1550895296" status:"completed" tags:"polybar,arch" uuid:"02704bce-fb79-430f-9f06-7010a6e365ba"]
+---
+time 1550895297
+old [description:"gmail?" entry:"1540606051" modified:"1540607558" status:"pending" tags:"polybar,arch" uuid:"e517298b-618a-47fb-b4d5-77e740acd89d"]
+new [description:"gmail?" end:"1550895297" entry:"1540606051" modified:"1550895297" status:"completed" tags:"polybar,arch" uuid:"e517298b-618a-47fb-b4d5-77e740acd89d"]
+---
+time 1550963351
+old [description:"drop-down dmenu-like but prettier?" entry:"1540702581" modified:"1540702581" status:"pending" tags:"arch,polybar" uuid:"b2dba1b3-7a55-42e5-b959-06b698f2c22c"]
+new [description:"drop-down dmenu-like but prettier?" end:"1550963351" entry:"1540702581" modified:"1550963351" status:"completed" tags:"arch,polybar" uuid:"b2dba1b3-7a55-42e5-b959-06b698f2c22c"]
+---
+time 1550976535
+old [description:"suspend on lid-close" entry:"1550783863" modified:"1550783863" status:"pending" uuid:"247a7e29-9246-4541-acab-37e2b57f01fe"]
+new [description:"suspend on lid-close" entry:"1550783863" modified:"1550976535" status:"pending" tags:"laptop" uuid:"247a7e29-9246-4541-acab-37e2b57f01fe"]
+---
