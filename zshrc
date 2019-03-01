@@ -143,3 +143,5 @@ set -o vi
 
 alias neofetch="neofetch --gpu_brand off --cpu_brand off --kitty --underline_char '~'"
 
+#location for custom completion scripts
+fpath+=~/.zfunc
