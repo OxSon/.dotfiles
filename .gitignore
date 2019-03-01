@@ -1,5 +1,7 @@
 .task/*
+tmux/resurrect
 .*.zni
+config/discord
 .ssr*
 .dotnet
 .cabal
