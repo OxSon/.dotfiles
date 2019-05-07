@@ -62,11 +62,11 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
+#
+# FIXME plugins seem to not be working, haven't investigated yet 
 plugins=(
-    zsh-syntax-highlighting
+#    zsh-syntax-highlighting
     git
-    web-search
-    taskwarrior
     stack
     github
     colored-man-pages

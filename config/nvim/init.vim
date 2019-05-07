@@ -17,30 +17,14 @@ call plug#begin()
     Plug 'tpope/vim-fugitive'
     Plug 'Townk/vim-autoclose'
     Plug 'mboughaba/i3config.vim'
-    Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+"    Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-    Plug 'tpope/vim-obsession'
+"    Plug 'tpope/vim-obsession'
     Plug 'rust-lang/rust.vim'
     
 call plug#end()
 
 """"""""""plug-in related settings""""""
-
-"completion
-inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<Tab>"
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
-" Use <c-space> for trigger completion.
-inoremap <silent><expr> <c-space> coc#refresh()
-
-" Use <cr> for confirm completion, `<C-g>u` means break undo chain at current position.
-" Coc only does snippet and additional edit on confirm.
-inoremap <expr> <cr> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-
-" Remap keys for gotos
-nmap <silent> gd <Plug>(coc-definition)
-nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
-nmap <silent> gr <Plug>(coc-references)
 
 "lightline
 let g:lightline = {

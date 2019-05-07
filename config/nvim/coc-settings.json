@@ -1,0 +1,8 @@
+"languageserver": {
+    "golang": {
+      "command": ["~/go/bin/bingo"],
+      "args": ["--diagnostics-style=instant"],
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "filetypes": ["go"]
+    }
+}
