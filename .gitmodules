@@ -58,3 +58,6 @@
 [submodule "vim/plugged/rust.vim"]
 	path = vim/plugged/rust.vim
 	url = https://github.com/rust-lang/rust.vim
+[submodule "dotbot-yay"]
+	path = dotbot-yay
+	url = git@github.com:OxSon/dotbot-yay.git
