@@ -27,3 +27,8 @@
     ~/.config/:
         glob: true
         path: config/*
+
+- shell:
+    - git submodule init
+    - git submodule sync --recursive
+    - git submodule update
