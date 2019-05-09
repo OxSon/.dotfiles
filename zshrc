@@ -136,7 +136,7 @@ alias taskpush="git -C ~/.dotfiles/task add backlog.data pending.data undo.data 
 #make tldr pretty
 alias tldr="tldr -t base16"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$PATH"
 
 #Vi mode for shell#
 set -o vi
