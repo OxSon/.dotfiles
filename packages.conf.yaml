@@ -1,0 +1,25 @@
+- yay:
+    - vim
+    - zsh
+    - kitty
+    - tmux
+    - neovim
+    - firefox
+    - tldr
+    - polybar
+    - unclutter
+    - xclip
+    - ranger
+    - python
+    - python2
+    - python-pip
+    - python2-pip
+    - jdk12-openj9-bin
+    - redshift
+    - neofetch
+    - nerd-fonts-fira-code
+    - feh
+    - bat
+    - code
+    - intellij-idea-ultimate-edition
+    - galculator
