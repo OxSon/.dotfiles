@@ -1,0 +1,12 @@
+- shell:
+    - [echo "WARNING: The following will fail when not run with sudo or root privileges."]
+    - [git submodule update --init --recursive, Installing submodules]
+    - [npm install --global pure-prompt --allow-root --unsafe-perm=true, Installing Pure Prompt for zsh]
+    - [ssh-keygen -t rsa -b 4096 -P "" -f "$HOME/.ssh/id_rsa" -q, Generating RSA public and private key]
+    - [chsh -s $(which zsh), Changing default shell to zsh]
+    -
+      command: "sh -c '$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)'"
+      description: Installing Oh-My-Zsh
+    -
+      command: "git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting"
+      description: Installing zsh syntax-highlighting
