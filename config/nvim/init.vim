@@ -19,7 +19,6 @@ call plug#begin()
     Plug 'mboughaba/i3config.vim'
     Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-"    Plug 'tpope/vim-obsession'
     Plug 'rust-lang/rust.vim'
     
 call plug#end()
