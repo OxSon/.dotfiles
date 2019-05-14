@@ -133,9 +133,6 @@ alias ping="prettyping"
 alias taskpull="git -C ~/.dotfiles submodule update task"
 alias taskpush="git -C ~/.dotfiles/task add backlog.data pending.data undo.data && git -C ~/.dotfiles/task commit -m 'Update tasks' && git -C ~/.dotfiles/task push && git -C ~/.dotfiles add task && git -C ~/.dotfiles commit -m 'Update tasks' && git -C ~/.dotfiles push"
 
-#make tldr pretty
-alias tldr="tldr -t base16"
-
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$PATH"
 
 #Vi mode for shell#
