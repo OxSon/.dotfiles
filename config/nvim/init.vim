@@ -17,31 +17,44 @@ call plug#begin()
     Plug 'tpope/vim-fugitive'
     Plug 'Townk/vim-autoclose'
     Plug 'mboughaba/i3config.vim'
-"    Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
+    Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
     Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-"    Plug 'tpope/vim-obsession'
     Plug 'rust-lang/rust.vim'
     
 call plug#end()
 
 """"""""""plug-in related settings""""""
 
+"CoC completion
+inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<Tab>"
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
+" Use <c-space> for trigger completion.
+inoremap <silent><expr> <c-space> coc#refresh()
+
 "lightline
 let g:lightline = {
     \ 'colorscheme': 'solarized',
     \ 'active': {
           \   'left': [ [ 'mode', 'paste' ],
-          \             [ 'cocstatus', 'readonly', 'filename', 'modified' ] ]
+          \             [ 'cocstatus', 'currentfunction', 'readonly', 'filename', 'modified' ] ]
           \ },
           \ 'component_function': {
-          \   'cocstatus': 'coc#status'
+          \   'cocstatus': 'coc#status',
+          \   'currentfunction': 'CocCurrentFunction'
           \ },
-    \ }
+          \ }
 
 "gitgutter
 nnoremap <leader>f  :GitGutterFold<CR>
 nnoremap <leader>h  :GitGutterNextHunk<CR>
 nnoremap <leader>H  :GitGutterPrevHunk<CR>
+
+"Format buffer using Prettier CoC extension
+command! -nargs=0 Prettier :CocCommand prettier.formatFile
+
+"Range format as above
+vmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 
 "finally source vimrc
 source ~/.vimrc
