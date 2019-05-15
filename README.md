@@ -11,8 +11,8 @@ Various dotfiles and configs. Not guaranteed to be 100% working, optimal, or des
   
   `cd .dotfiles`
 
-#### 2. Init & update submodules
-  `git submodule init && git submodule update`
+#### 2. Update submodules
+  `git submodule update --init --recursive`
 
 #### 3. Install 
 Note: at this point you may want to edit the config file at `.dotfiles/default.conf.yaml`. Please refer to the excellent project documentation available at [the dotbot project page](https://github.com/anishathalye/dotbot). That being said,
