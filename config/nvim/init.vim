@@ -18,8 +18,10 @@ call plug#begin()
     Plug 'Townk/vim-autoclose'
     Plug 'mboughaba/i3config.vim'
     Plug 'neoclide/coc.nvim', {'tag': '*', 'do': { -> coc#util#install()}}
-    Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-    Plug 'rust-lang/rust.vim'
+    Plug 'mxw/vim-jsx'
+    Plug 'pangloss/vim-javascript'
+"    Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+"    Plug 'rust-lang/rust.vim'
     
 call plug#end()
 

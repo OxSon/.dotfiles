@@ -61,3 +61,12 @@
 [submodule "dotbot-yay"]
 	path = dotbot-yay
 	url = git@github.com:OxSon/dotbot-yay.git
+[submodule "vim-javascript"]
+	path = vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/plugged/vim-javascript"]
+	path = vim/plugged/vim-javascript
+	url = https://github.com/pangloss/vim-javascript.git
+[submodule "vim/plugged/vim-jsx"]
+	path = vim/plugged/vim-jsx
+	url = https://github.com/mxw/vim-jsx.git
