@@ -140,5 +140,21 @@ set -o vi
 
 alias neofetch="neofetch --gpu_brand off --cpu_brand off --kitty --underline_char '~'"
 
+#Completion stuff######
+#
 #location for custom completion scripts
 fpath+=~/.zfunc
+
+#for kitty
+autoload -Uz compinit
+compinit
+kitty + complete setup zsh | source /dev/stdin
+#pip
+eval "`pip completion --zsh`"
+#pip3
+compctl -K _pip_completion pip3
+
+###End completion stuff###
+
+#Caps -> Esc
+setxkbmap -option caps:escape
