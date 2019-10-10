@@ -119,8 +119,6 @@ vnoremap <tab> %
 " the previous bindings
 nnoremap B ^
 nnoremap E $
-nnoremap $ <nop>
-nnoremap ^ <nop>
 nnoremap dE d$
 nnoremap yE y$
 nnoremap dB d^
@@ -138,7 +136,4 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>h <C-w>h
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
-
-" open a terminal in a split
-nnoremap <leader>t :vs<CR> :terminal<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
