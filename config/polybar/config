@@ -61,8 +61,8 @@ font-3 = MaterialIcons:size=15:antialias=false;6
 
 ;i3
 modules-left = i3 filesystem temperature xwindow
-modules-center = updates-arch-combined player-mpris-tail
-modules-right = taskwarrior pulseaudio date
+;modules-center = updates-arch-combined player-mpris-tail
+modules-right = alsa date
 ;tdrop ?
 
 tray-position = right
@@ -246,12 +246,14 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 type = internal/alsa
 
 format-volume = <label-volume> <bar-volume>
-label-volume = vol
-label-volume-foreground = ${root.foreground}
+;label-volume = vol
+label-volume = ∰ %percentage%%
+;label-volume-foreground = ${root.foreground}
 
 format-muted-prefix = " "
 format-muted-foreground = ${colors.foreground-alt}
-label-muted = sound muted
+;label-muted = sound muted
+label-muted = "∰                       ✖"
 
 bar-volume-width = 10
 bar-volume-foreground-0 = #55aa55
