@@ -39,11 +39,12 @@ set wildmenu " autocomplete vim commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 set background=dark
-if has('nvim')
-    colorscheme NeoSolarized
-else
-    colorscheme solarized
-endif
+colorscheme solarized
+"if has('nvim')
+"    colorscheme NeoSolarized
+"else
+"    colorscheme solarized
+"endif
 "colorscheme wal
 "colorscheme waltest
 

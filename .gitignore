@@ -302,3 +302,5 @@ fabric.properties
 Documents
 Personal/
 .config/ranger/
+vim/plugged/
+vim/sessions/

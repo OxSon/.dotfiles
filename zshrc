@@ -121,7 +121,7 @@ alias xclip="xclip -sel clip"
 alias tmux="tmux -2"
 alias ghc="ghc -dynamic"
 alias vtop="wal-vtop &> /dev/null; vtop -t wal"
-alias pipes="pipes.sh && source $HOME/.zshrc && task"
+alias pipes="pipes.sh"
 
 #aliases to replace some cli tools
 alias vim="nvim"
@@ -157,4 +157,4 @@ compctl -K _pip_completion pip3
 ###End completion stuff###
 
 #Caps -> Esc
-setxkbmap -option caps:escape
+#setxkbmap -option caps:escape
