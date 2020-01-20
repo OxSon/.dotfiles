@@ -24,6 +24,7 @@ call plug#begin()
     Plug 'mboughaba/i3config.vim'
     "Plug 'mxw/vim-jsx'
     Plug 'pangloss/vim-javascript'
+    Plug'octol/vim-cpp-enhanced-highlight'
 "    Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 "    Plug 'rust-lang/rust.vim'
     
