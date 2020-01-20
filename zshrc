@@ -121,7 +121,7 @@ alias xclip="xclip -sel clip"
 alias tmux="tmux -2"
 alias ghc="ghc -dynamic"
 alias vtop="wal-vtop &> /dev/null; vtop -t wal"
-alias pipes="pipes.sh && source $HOME/.zshrc && task"
+alias pipes="pipes.sh"
 
 #aliases to replace some cli tools
 alias vim="nvim"
@@ -140,5 +140,21 @@ set -o vi
 
 alias neofetch="neofetch --gpu_brand off --cpu_brand off --kitty --underline_char '~'"
 
+#Completion stuff######
+#
 #location for custom completion scripts
 fpath+=~/.zfunc
+
+#for kitty
+autoload -Uz compinit
+compinit
+kitty + complete setup zsh | source /dev/stdin
+#pip
+eval "`pip completion --zsh`"
+#pip3
+compctl -K _pip_completion pip3
+
+###End completion stuff###
+
+#Caps -> Esc
+#setxkbmap -option caps:escape

@@ -39,11 +39,12 @@ set wildmenu " autocomplete vim commands
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
 set background=dark
-if has('nvim')
-    colorscheme NeoSolarized
-else
-    colorscheme solarized
-endif
+colorscheme solarized
+"if has('nvim')
+"    colorscheme NeoSolarized
+"else
+"    colorscheme solarized
+"endif
 "colorscheme wal
 "colorscheme waltest
 
@@ -119,8 +120,6 @@ vnoremap <tab> %
 " the previous bindings
 nnoremap B ^
 nnoremap E $
-nnoremap $ <nop>
-nnoremap ^ <nop>
 nnoremap dE d$
 nnoremap yE y$
 nnoremap dB d^
@@ -138,7 +137,4 @@ nnoremap <leader>j <C-w>j
 nnoremap <leader>h <C-w>h
 nnoremap <leader>k <C-w>k
 nnoremap <leader>l <C-w>l
-
-" open a terminal in a split
-nnoremap <leader>t :vs<CR> :terminal<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""
