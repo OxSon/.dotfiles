@@ -128,6 +128,8 @@ alias vim="nvim"
 alias vi="nvim"
 alias cat="bat"
 alias ping="prettyping"
+#allman style braces, indent=4spaces, indent namespaces, attached braces namespaces, broken else
+alias astyle="astyle -s4A1xnNk2"
 
 #task alias
 alias taskpull="git -C ~/.dotfiles submodule update task"
