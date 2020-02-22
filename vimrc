@@ -38,7 +38,15 @@ set wildmenu " autocomplete vim commands
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 syntax on
+
+"workaround for background-color erase issues with kitty term
+let &t_ut=''
 set background=dark
+
+"switch between dark and light themes
+nnoremap <leader><space>l :set background=light<CR>
+nnoremap <leader><space>d :set background=dark<CR>
+
 colorscheme solarized
 "if has('nvim')
 "    colorscheme NeoSolarized
