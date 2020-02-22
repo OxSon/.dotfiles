@@ -121,5 +121,8 @@ command! -nargs=0 Prettier :CocCommand prettier.formatFile
 vmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
+"get correct jsonc comment syntax highlighting (primarily for coc.nvim config file)
+autocmd FileType json syntax match Comment +\/\/.\+$+
+
 "finally source vimrc
 source ~/.vimrc
