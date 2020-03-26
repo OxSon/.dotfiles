@@ -15,8 +15,8 @@ call plug#begin()
     Plug 'junegunn/seoul256.vim'
     "Plug 'iCyMind/NeoSolarized'
     Plug 'airodactyl/neovim-ranger'
-    Plug 'junegunn/goyo.vim'
-    Plug 'junegunn/limelight.vim'
+    "Plug 'junegunn/goyo.vim'
+    "Plug 'junegunn/limelight.vim'
     "    Plug 'airblade/vim-gitgutter'
     Plug 'itchyny/lightline.vim'
     "Plug 'tpope/vim-fugitive'
@@ -36,24 +36,24 @@ call plug#end()
 "let g:limelight_conceal_ctermfg = 'black'
 
 " auto turn on limelight when goyo is on
-function! s:goyo_enter()
-  set noshowmode
-  set noshowcmd
-  set scrolloff=999
+"function! s:goyo_enter()
+"  set noshowmode
+"  set noshowcmd
+"  set scrolloff=999
   Limelight
   " ...
-endfunction
+"endfunction
 
-function! s:goyo_leave()
-  set showmode
-  set showcmd
-  set scrolloff=5
-  Limelight!
+"function! s:goyo_leave()
+"  set showmode
+"  set showcmd
+"  set scrolloff=5
+"  Limelight!
   " ...
-endfunction
+"endfunction
 
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()
+"autocmd! User GoyoEnter nested call <SID>goyo_enter()
+"autocmd! User GoyoLeave nested call <SID>goyo_leave()
 
 "CoC completion
 inoremap <silent><expr> <TAB> pumvisible() ? "\<C-n>" : "\<Tab>"
@@ -76,7 +76,7 @@ let g:lightline = {
 
 " Plain text
 " ==========
-func! WordProcessorMode()
+" func! WordProcessorMode()
     setlocal formatoptions-=t
     setlocal textwidth=80
     map <buffer> j gj
@@ -88,7 +88,7 @@ func! WordProcessorMode()
     setlocal wrap
     setlocal linebreak
     colorscheme seoul256
-    Goyo
+"    Goyo
 endfu
 
 " autocommands
