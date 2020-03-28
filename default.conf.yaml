@@ -19,10 +19,8 @@
     ~/.bashrc:
     ~/.zshrc:
     ~/.ideavimrc:
-    ~/.taskrc:
-    ~/.task/:
-        glob: true
-        path: task/*
+    ~/.skhdrc:
+    ~/.yabairc:
     ~/.config/i3/config: i3.config
     ~/.config/:
         glob: true
