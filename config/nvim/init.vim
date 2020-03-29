@@ -15,6 +15,7 @@ call plug#begin()
     Plug 'junegunn/seoul256.vim'
     "Plug 'iCyMind/NeoSolarized'
     Plug 'airodactyl/neovim-ranger'
+    Plug 'tpope/vim-rails'
     "Plug 'junegunn/goyo.vim'
     "Plug 'junegunn/limelight.vim'
     "    Plug 'airblade/vim-gitgutter'
@@ -40,7 +41,7 @@ call plug#end()
 "  set noshowmode
 "  set noshowcmd
 "  set scrolloff=999
-  Limelight
+"  Limelight
   " ...
 "endfunction
 
@@ -76,7 +77,7 @@ let g:lightline = {
 
 " Plain text
 " ==========
-" func! WordProcessorMode()
+func! WordProcessorMode()
     setlocal formatoptions-=t
     setlocal textwidth=80
     map <buffer> j gj
