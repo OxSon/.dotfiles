@@ -65,7 +65,7 @@
 #
 #               to allow a command to extend into multiple lines,
 #               prepend '\' at the end of the previous line.
-#
+
 #               an EOL character signifies the end of the bind.
 
 # ############################################################### #
@@ -88,9 +88,6 @@ shift + cmd - l : yabai -m window --swap east
 
 # move managed window
 # shift + cmd - h : yabai -m window --warp east
-
-# balance size of windows
-cmd + shift + alt - 0x18 : yabai -m space --balance
 
 # make floating window fill screen
 # shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
@@ -133,10 +130,15 @@ shift + cmd - 0x21 : yabai -m window --display prev; yabai -m display --focus pr
 shift + cmd - 0x1E : yabai -m window --display next; yabai -m display --focus next
 
 # move floating window
-shift + ctrl - w : yabai -m window --move rel:0:-20
-shift + ctrl - s : yabai -m window --move rel:0:20
-shift + ctrl - a : yabai -m window --move rel:-20:0
-shift + ctrl - d : yabai -m window --move rel:20:0
+shift + cmd - w : yabai -m window --move rel:0:-20
+shift + cmd - s : yabai -m window --move rel:0:20
+shift + cmd - a : yabai -m window --move rel:-20:0
+shift + cmd - d : yabai -m window --move rel:20:0
+
+# tree manipulation
+cmd + alt - e : yabai -m space --rotate 90
+cmd + alt - h : yabai -m space --mirror x-axis
+cmd + alt - v : yabai -m space --mirror y-axis
 
 # increase window size
 shift + alt - a : yabai -m window --resize left:-20:0
@@ -145,6 +147,10 @@ shift + alt - w : yabai -m window --resize top:0:-20
 # decrease window size
 shift + alt - d : yabai -m window --resize left:20:0
 shift + alt - s : yabai -m window --resize top:0:20
+
+# balance size of windows
+cmd + shift + alt - 0x18 : yabai -m space --balance
+
 
 # set insertion point in focused container
 # ctrl + alt - h : yabai -m window --insert west

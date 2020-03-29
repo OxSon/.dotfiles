@@ -1,0 +1,36 @@
+- defaults:
+    link:
+        create: true
+        relink: true
+        force: true
+
+- clean: ['~', '~/.config']
+
+- link:
+    ~/.tmux.conf:
+    ~/.mozilla/firefox/bihhgrws.default/chrome/:
+        glob: true
+        path: chrome/*
+    ~/.tmux:
+    ~/.Xresources:
+    ~/.ghci:
+    ~/.vim:
+    ~/.vimrc:
+    ~/.bashrc:
+    ~/.zshrc:
+    ~/.ideavimrc:
+    ~/.skhdrc:
+    ~/.yabairc:
+    ~/.config/i3/config: i3.config
+    ~/.config/:
+        glob: true
+        path: config/*
+
+- shell:
+    - git submodule update
+    - defaults write -g ApplePressAndHoldEnabled -bool false
+    - defaults write com.apple.finder ShowPathbar -bool true
+    - defaults write NSGlobalDomain InitialKeyRepeat -int 12
+    - chflags nohidden ~/Library
+    - /bin/zsh -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    - brew tap caskroom/cask
