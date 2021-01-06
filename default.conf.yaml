@@ -13,6 +13,7 @@
         path: chrome/*
     ~/.tmux:
     ~/.Xresources:
+    ~/.emacs:
     ~/.ghci:
     ~/.vim:
     ~/.vimrc:
