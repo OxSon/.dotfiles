@@ -62,17 +62,15 @@ export ZSH="$HOME/.oh-my-zsh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-#
-# FIXME plugins seem to not be working, haven't investigated yet 
 plugins=(
-#    zsh-syntax-highlighting
     git
-    stack
-    github
     colored-man-pages
     command-not-found
-    mvn
     zsh_reload
+    zsh-completions
+    fzf
+    history-substring-search
+    zsh-syntax-highlighting
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -135,7 +133,7 @@ alias astyle="astyle -s4A1xnNk2"
 alias taskpull="git -C ~/.dotfiles submodule update task"
 alias taskpush="git -C ~/.dotfiles/task add backlog.data pending.data undo.data && git -C ~/.dotfiles/task commit -m 'Update tasks' && git -C ~/.dotfiles/task push && git -C ~/.dotfiles add task && git -C ~/.dotfiles commit -m 'Update tasks' && git -C ~/.dotfiles push"
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$PATH"
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/go/bin:$HOME/.gem/ruby/2.7.0/bin:$PATH"
 
 #Vi mode for shell#
 set -o vi
@@ -160,3 +158,4 @@ compctl -K _pip_completion pip3
 
 #Caps -> Esc
 #setxkbmap -option caps:escape
+
