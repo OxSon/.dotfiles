@@ -26,9 +26,9 @@ set backspace=indent,eol,start " allow backspacing over everything in insert mod
 
 set complete-=i "disable
 
- "if has('mouse') " enable mouse if terminal supports it
-  "set mouse=a   "
- "endif		"
+if has('mouse') " enable mouse if terminal supports it
+    set mouse=a   "
+endif
 
 set wildmenu " autocomplete vim commands
 
