@@ -138,8 +138,6 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/g
 #Vi mode for shell#
 set -o vi
 
-alias neofetch="neofetch --gpu_brand off --cpu_brand off --kitty --underline_char '~'"
-
 #Completion stuff######
 #
 #location for custom completion scripts
@@ -149,13 +147,16 @@ fpath+=~/.zfunc
 autoload -Uz compinit
 compinit
 kitty + complete setup zsh | source /dev/stdin
+alias kssh="kitty +kitten ssh" # make kitty upload terminfo to server we're sshing into
+
 #pip
 eval "`pip completion --zsh`"
 #pip3
 compctl -K _pip_completion pip3
 
-###End completion stuff###
+alias py="python"
 
 #Caps -> Esc
 #setxkbmap -option caps:escape
+
 
