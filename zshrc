@@ -160,3 +160,4 @@ alias py="python"
 #setxkbmap -option caps:escape
 
 
+source /usr/share/doc/find-the-command/ftc.zsh
