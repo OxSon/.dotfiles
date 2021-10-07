@@ -156,8 +156,7 @@ compctl -K _pip_completion pip3
 
 alias py="python"
 
+alias debugpy="DEBUG=true python"
+
 #Caps -> Esc
 #setxkbmap -option caps:escape
-
-
-source /usr/share/doc/find-the-command/ftc.zsh
