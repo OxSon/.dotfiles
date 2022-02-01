@@ -1,0 +1,1 @@
+kitty --start-as fullscreen -o font_size=18 -o window_padding_width=50.0
