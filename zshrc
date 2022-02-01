@@ -154,13 +154,5 @@ eval "`pip completion --zsh`"
 #pip3
 compctl -K _pip_completion pip3
 
-alias py="python"
-
-alias debugpy="DEBUG=true python"
-
 #Caps -> Esc
 #setxkbmap -option caps:escape
-
-# access student work and hw solns for TA work
-alias login3520="xfce4-terminal -x ssh u1272177@cs3520.eng.utah.edu"
-alias dl3520="xfce4-terminal -x sftp u1272177@cs3520.eng.utah.edu"
