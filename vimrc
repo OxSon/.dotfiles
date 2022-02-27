@@ -86,8 +86,13 @@ endif
 " Miscellaneous Bindings
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap JJ jj
-inoremap jj <ESC>
+" Bash like keys for the command line
+cnoremap <C-A>		<Home>
+cnoremap <C-E>		<End>
+cnoremap <C-K>		<C-U>
+
+cnoremap <C-P> <Up>
+cnoremap <C-N> <Down>
 
 " following lines fix accidental
 " entering of 'help' mode

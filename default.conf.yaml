@@ -2,30 +2,33 @@
     link:
         create: true
         relink: true
-        force: true
+        force: false
 
-- clean: ['~', '~/.config']
+# - clean: ['~', '~/.config']
 
 - link:
-    ~/.tmux.conf:
-    ~/.mozilla/firefox/bihhgrws.default/chrome/:
-        glob: true
-        path: chrome/*
-    ~/.tmux:
-    ~/.Xresources:
-    ~/.emacs:
-    ~/.ghci:
-    ~/.vim:
-    ~/.vimrc:
-    ~/.bashrc:
-    ~/.zshrc:
     ~/.ideavimrc:
-    ~/.skhdrc:
-    ~/.yabairc:
-    ~/.config/i3/config: i3.config
-    ~/.config/:
+    ~/.config/kitty:
         glob: true
-        path: config/*
+        path: config/kitty/*
+    ~/.ghci:
+    ~/.emacs:
+
+    # fix
+    # ~/.mozilla/firefox/*.default/chrome/:
+    #     glob: true
+    #     path: chrome/*
+
+    # fix colors
+    # ~/.Xresources:
+
+    # merge with existing
+    # ~/.zshrc:
+    # ~/.vim:
+    # ~/.vimrc:
+    # ~/.bashrc:
+
 
 - shell:
     - git submodule update
+
