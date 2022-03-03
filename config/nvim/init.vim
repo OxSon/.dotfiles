@@ -23,8 +23,10 @@ call plug#begin()
     "Plug 'tpope/vim-fugitive'
     Plug 'Townk/vim-autoclose'
     Plug 'mboughaba/i3config.vim'
+    Plug 'wlangstroth/vim-racket'
     "Plug 'mxw/vim-jsx'
     Plug 'pangloss/vim-javascript'
+    Plug 'tpope/vim-commentary'
     Plug'octol/vim-cpp-enhanced-highlight'
 "    Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 "    Plug 'rust-lang/rust.vim'

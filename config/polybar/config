@@ -60,8 +60,8 @@ font-2 = wuncon siji:pixelsize=10;1
 font-3 = MaterialIcons:size=15:antialias=false;6
 
 ;i3
-modules-left = i3 filesystem temperature xwindow
-;modules-center = updates-arch-combined player-mpris-tail
+modules-left = i3 filesystem eth xwindow
+modules-center = updates-arch-combined player-mpris-tail
 modules-right = alsa date
 ;tdrop ?
 
@@ -122,7 +122,7 @@ index-sort = true
 wrapping-scroll = false
 
 ; Only show workspaces on the same output as the bar
-;pin-workspaces = true
+pin-workspaces = true
 
 label-mode-padding = 2
 label-mode-foreground = ${colors.foreground}
@@ -191,11 +191,10 @@ format-connected-prefix = " "
 format-connected-prefix-foreground = ${colors.foreground-alt}
 label-connected = %local_ip%
 
-format-disconnected =
-;format-disconnected = <label-disconnected>
-;format-disconnected-underline = ${self.format-connected-underline}
-;label-disconnected = %ifname% disconnected
-;label-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected = <label-disconnected>
+format-disconnected-underline = ${self.format-connected-underline}
+label-disconnected = %ifname% DISCONNECTED
+label-disconnected-foreground = ${colors.foreground-alt}
 
 [module/date]
 type = internal/date

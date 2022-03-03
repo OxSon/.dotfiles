@@ -69,7 +69,7 @@ plugins=(
     zsh_reload
     zsh-completions
     fzf
-    history-substring-search
+    history-substring-searclh
     zsh-syntax-highlighting
 )
 
@@ -138,6 +138,8 @@ export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$HOME/g
 #Vi mode for shell#
 set -o vi
 
+alias neofetch="neofetch --gpu_brand off --cpu_brand off --kitty --underline_char '~'"
+
 #Completion stuff######
 #
 #location for custom completion scripts
@@ -147,22 +149,13 @@ fpath+=~/.zfunc
 autoload -Uz compinit
 compinit
 kitty + complete setup zsh | source /dev/stdin
-alias kssh="kitty +kitten ssh" # make kitty upload terminfo to server we're sshing into
-
 #pip
 eval "`pip completion --zsh`"
 #pip3
 compctl -K _pip_completion pip3
 
-alias py="python"
-
-alias debugpy="DEBUG=true python"
+###End completion stuff###
 
 #Caps -> Esc
 #setxkbmap -option caps:escape
 
-# access student work and hw solns for TA work
-alias login3520="xfce4-terminal -x ssh u1272177@cs3520.eng.utah.edu"
-alias dl3520="xfce4-terminal -x sftp u1272177@cs3520.eng.utah.edu"
-
-export PATH="$PATH:$HOME/.local/bin"

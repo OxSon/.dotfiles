@@ -65,7 +65,7 @@ else
     set listchars=tab:>-,trail:-
 endif
 
-set list
+set nolist
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""
 "
@@ -86,8 +86,8 @@ endif
 " Miscellaneous Bindings
 "
 """""""""""""""""""""""""""""""""""""""""""""""""""""
-inoremap JJ jj
-inoremap jj <ESC>
+" inoremap JJ jj
+" inoremap jj <ESC>
 
 " following lines fix accidental
 " entering of 'help' mode
